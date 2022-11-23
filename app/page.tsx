@@ -66,6 +66,7 @@ export default async function Page() {
                     <a href='mailto:dhanush.actual1@gmail.com' className='selection:bg-[#e34033] text-[#e34033] bg-[#e34033] bg-opacity-20 hover:bg-opacity-25 duration-300 ease-in-out px-24 py-4 text-center items-center rounded-lg'>Email</a>
                 </div>
                 {/* <p className='sticky text-gray-600'>© 2022 Dhanush.</p> */}
+                <div className='w-full h-10' />
             </div>
         </div>
     </div>
