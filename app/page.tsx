@@ -13,7 +13,7 @@ export default async function Page() {
                 </div>
                 <div className='w-full h-52' />
                 <p>Published on: {currentDate}</p>
-                <h1 className='mb-3 text-6xl font-bold leading-tight text-gray-900'>Hello, I am <span className='rounded pt-px pb-[2px] gradient-bg'>Dhanush</span></h1>
+                <h1 className='mb-3 text-6xl font-bold leading-tight text-gray-900'>Sup, I am <span className='rounded pt-px pb-[2px] gradient-bg'>Dhanush</span></h1>
                 {/* <p className='text-lg'>A 16 year-old who is a half-assed UI/UX Designer, Fullstack Developer, and Certified Video Designer based near Dallas, Texas.</p> */}
                 <p className='text-lg'>A 16 year-old based near Dallas, Texas.</p>
                 <div className='flex flex-wrap gap-2 mt-3'>
