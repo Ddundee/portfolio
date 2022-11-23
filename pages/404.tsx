@@ -1,9 +1,9 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import '../styles/globals.css';
 
 export default function Custom404() {
-    const router = useRouter();
     return (
         <div>
             <Head>
@@ -19,7 +19,9 @@ export default function Custom404() {
                                 <p>This page could not be found.</p>
                             </div>
                             <div className='flex justify-center'>
-                                <button className='px-3 py-1 text-center text-white duration-150 bg-black border border-black border-opacity-100 rounded hover:duration-150 hover:bg-white hover:text-black' onClick={() => { router.push('/') }}>Go Home</button>
+                                <Link href='/'>
+                                    <button className='px-3 py-1 text-center text-white duration-150 bg-black border border-black border-opacity-100 rounded hover:duration-150 hover:bg-white hover:text-black'>Go Home</button>
+                                </Link>
                             </div>
                         </div>
                     </div>

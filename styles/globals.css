@@ -29,6 +29,10 @@ body {
     linear-gradient(to bottom, grey 1px, transparent 1px);
 }
 
+.noise {
+  filter: url(#noiseFilter);
+}
+
 .paper {
   box-shadow: 0 1em .5em #777;
 }
