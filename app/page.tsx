@@ -16,7 +16,6 @@ export default function Page() {
                     <div className='w-full h-10' />
                     <div className='my-3 text-3xl font-semibold'>Skillset</div>
                     <div className='flex flex-col gap-3 md:flex-row'>
-
                         <div className='w-full p-3 bg-white border border-gray-500 rounded-lg lg:w-72'>
                             <h2 className='pb-3 text-2xl font-medium text-center'>Applications</h2>
                             <div className='flex flex-wrap gap-1'>
@@ -44,10 +43,7 @@ export default function Page() {
                                 <p className='place-content-start selection:bg-[#38bdf8] text-[#38bdf8] bg-[#38bdf8] bg-opacity-20 rounded-sm p-1' >TailwindCSS</p>
                             </div>
                         </div>
-
-
                     </div>
-
                     <div className='w-full h-10' />
                     <div className='my-3 text-3xl font-semibold'>Socials</div>
                     <div className='flex flex-col gap-3 md:flex-row'>
@@ -56,7 +52,6 @@ export default function Page() {
                         <a href='mailto:dhanush.actual1@gmail.com' className='selection:bg-[#e34033] text-[#e34033] bg-[#e34033] bg-opacity-20 hover:bg-opacity-25 duration-300 ease-in-out hover:px-28 px-24 py-4 text-center items-center rounded-lg'>Email</a>
                     </div>
                     {/* <p className='sticky text-gray-600'>© 2022 Dhanush.</p> */}
-
                 </div>
             </div>
         </div>
