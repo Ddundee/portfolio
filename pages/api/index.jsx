@@ -9,7 +9,7 @@ export default async function handler(req, res) {
             skillset: {
                 applications: ["Adobe Photoshop", "Adobe Premier Pro", "Adobe XD"],
                 languages: ["HTML5", "CSS3", "Java", "Javascript", "Python"],
-                others: ["NextJS", "ReactJS", "Electron", "TailwindCSS"]
+                others: ["NodeJS", "NextJS", "ReactJS", "Electron", "TailwindCSS", "Bootstrap"]
             },
             socials: {
                 github: "https://www.github.com/Ddundee",
