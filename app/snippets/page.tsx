@@ -21,7 +21,7 @@ export default async function Page() {
                 <div className='w-full h-52' />
                 <p>Published on: {currentDate}</p>
                 <h1 className='mb-3 text-6xl font-bold leading-tight text-gray-900 capitalize'>Snippets</h1>
-                <p>These are a collection of code snippets I&apos;ve used in the past and saved.</p>
+                <p className='text-lg'>These are a collection of code snippets I&apos;ve used in the past and saved.</p>
                 <div className='w-full h-10' />
                 {/* <Snippet text={['cd project', 'now']} width="300px" /> */}
                 {/* <ul className='pl-5 
