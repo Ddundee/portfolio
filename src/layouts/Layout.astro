@@ -1,12 +1,12 @@
 ---
 export interface Props {
      title: string;
+     description?: string;
 }
 
-const { title } = Astro.props;
+let { title, description, url } = Astro.props;
 let date = new Date();
-let currentDate =
-     date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFullYear();
+let currentDate = date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFullYear();
 ---
 
 <!DOCTYPE html>
@@ -16,13 +16,24 @@ let currentDate =
           <meta name="viewport" content="width=device-width" />
           <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
           <meta name="generator" content={Astro.generator} />
-          <title>{title}</title>
+          <title>Dhanush: {title}</title>
      </head>
      <body>
         <div class="bg-gray-100 selection:bg-pink-500 selection:text-white">
-             <div class="flex justify-center bg-white graph-bg">
+             <div class="flex justify-center bg-white light-gray-bg">
                   <div class="w-[1240px] px-10 bg-white min-h-screen paper">
-                       <slot />
+                       <slot>
+                         <div class='w-full h-3' />
+                         <div class='flex justify-end w-full'>
+                              <a href='/'>
+                                   <button class='px-3 py-1 text-center text-white duration-150 bg-black border border-black border-opacity-100 rounded select-none hover:duration-150 hover:bg-white hover:text-black'>Go Home</button>
+                              </a>
+                         </div>
+                         <div class='w-full h-52' />
+                         <p>Published on: {currentDate}</p>
+                         <h1 class='mb-3 text-6xl font-bold leading-tight text-gray-900'>{title}</h1>
+                         {description? <p class='text-lg'>{description}</p> : undefined}
+                       </slot>
                   </div>
              </div>
         </div>
@@ -40,6 +51,7 @@ let currentDate =
 
      .gradient-bg {
           background: linear-gradient(90deg, #ec4899, #eab308);
+          /* background: linear-gradient(90deg, #111, #eee); */
           /* background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #287bb2); */
 
           background-size: 400% 400%;
@@ -47,10 +59,8 @@ let currentDate =
           height: 100vh;
      }
 
-     .graph-bg {
-          background-size: 40px 40px;
-          background-image: linear-gradient(to right, grey 1px, transparent 1px),
-               linear-gradient(to bottom, grey 1px, transparent 1px);
+     .light-gray-bg {
+          background-color: #f7f7f7;
      }
 
      .paper {
