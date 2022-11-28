@@ -14,27 +14,16 @@ for (let i = 0; i < items.length; i++) items[i].content = items[i].content?.spli
 <Layout title="Test">
     <div class='w-full h-3' />
     <div class='flex justify-end w-full'>
-        <a href='/snippets' class='px-3 py-1 text-center text-black duration-150 bg-white border border-black border-opacity-100 rounded hover:text-white hover:bg-black hover:duration-150'>Snippets &rarr;</a>
+         <a href='/'>
+            <button class='px-3 py-1 text-center text-white duration-150 bg-black border border-black border-opacity-100 rounded select-none hover:duration-150 hover:bg-white hover:text-black'>Go Home</button>
+        </a>
     </div>
     <div class='w-full h-52' />
     <p>Published on: {currentDate}</p>
     <h1 class='mb-3 text-6xl font-bold leading-tight text-gray-900'>{title}</h1>
     {items[0].content.map((item:string) => <p>{item}</p>)}
+    <ul>
+        {items.map((item:any) => <li><a href={`/newsletter/${item.guid}`}>{item.guid}</a></li>)}
+    </ul>
+    
 </Layout>
-
-<!-- 
-let Parser = require('rss-parser');
-let parser = new Parser();
-
-const rssReader = async () => {
-    let returnVal = await parser.parseURL('https://zapier.com/engine/rss/8957482/newsletter-flapeld');
-    for (let i = 0; i < returnVal.items.length; i++) delete returnVal.items[i].contentSnippet;
-    return returnVal;
-}
-(async () => {
-    let finalVal = await rssReader();
-    // console.log(finalVal.items[2].guid);
-    // finalVal.items.map((item) => { console.log(item.content) })
-    console.log(finalVal.items)
-})(); 
--->
