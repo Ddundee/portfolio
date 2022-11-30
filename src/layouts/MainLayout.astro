@@ -48,7 +48,9 @@ let currentDate = date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFul
           font-family: "Inter", sans-serif;
           color: #111;
      }
-
+code {
+          background: #000;
+     }
      .gradient-bg {
           background: linear-gradient(90deg, #ec4899, #eab308);
           /* background: linear-gradient(90deg, #111, #eee); */
@@ -65,6 +67,17 @@ let currentDate = date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFul
 
      .paper {
           box-shadow: 0 1em 0.5em #777;
+     }
+     
+     a {
+          color: #0063c5;
+          text-decoration: underline;
+          font-weight: 500;
+          transition-duration: 100ms;
+     }
+
+     a:hover {
+          color: #006bff;
      }
 
      @keyframes gradient-filter {

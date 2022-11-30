@@ -1,11 +1,11 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import MainLayout from '../layouts/MainLayout.astro';
 
 let date = new Date();
 let currentDate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
 ---
 
-<Layout title="Home">
+<MainLayout title="Home">
     <div class='w-full h-3' />
     <div class='flex justify-end w-full'>
         <a href='/snippets' class='px-3 py-1 text-center text-black duration-150 bg-white border border-black border-opacity-100 rounded hover:text-white hover:bg-black hover:duration-150 select-none'>Snippets &rarr;</a>
@@ -17,9 +17,9 @@ let currentDate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getF
     <p class='text-lg'>A 16 year-old based near Dallas, Texas.</p>
     <div class='flex flex-wrap gap-2 mt-3'>
 
+        <a href='https://www.credly.com/badges/95db5aa0-2310-4a42-b9e5-408e5d5ce095' target="_blank" rel="noreferrer" class='px-3 py-2 duration-200 bg-black rounded bg-opacity-5 hover:bg-opacity-10'>Certified Video Designer</a>
         <p class='px-3 py-2 duration-200 bg-black rounded bg-opacity-5 hover:bg-opacity-10'>UI/UX Designer</p>
         <p class='px-3 py-2 duration-200 bg-black rounded bg-opacity-5 hover:bg-opacity-10'>Fullstack Developer</p>
-        <a href='https://www.credly.com/badges/95db5aa0-2310-4a42-b9e5-408e5d5ce095' target="_blank" rel="noreferrer" class='px-3 py-2 duration-200 bg-black rounded bg-opacity-5 hover:bg-opacity-10'>Certified Video Designer</a>
     </div>
     <div class='w-full h-10' />
     <div class='my-3 text-3xl font-semibold'>Skillset</div>
@@ -65,5 +65,5 @@ let currentDate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getF
         <a href='mailto:dhanush.actual1@gmail.com' class='selection:bg-[#e34033] text-[#e34033] bg-[#e34033] bg-opacity-20 hover:bg-opacity-25 duration-300 ease-in-out px-24 py-4 text-center items-center rounded-lg'>Email</a>
     </div>
     <div class='w-full h-10' />    
-</Layout>
+</MainLayout>
 

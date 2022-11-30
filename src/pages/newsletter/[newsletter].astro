@@ -1,6 +1,6 @@
 ---
 import Parser from 'rss-parser';
-import Layout from '../../layouts/Layout.astro';
+import MainLayout from '../../layouts/MainLayout.astro';
 
 let date = new Date();
 let currentDate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 
 const { newsletter } = Astro.params;
 ---
-<Layout title={`${newsletter}`}>
+<MainLayout title={`${newsletter}`}>
     <div class='w-full h-3' />
     <div class='flex justify-end w-full'>
         <a href='/'>
@@ -26,4 +26,4 @@ const { newsletter } = Astro.params;
     <h1 class='mb-3 text-6xl font-bold leading-tight text-gray-900 capitalize'>{newsletter}</h1>
     <p class='text-lg'>{newsletter}</p>
     <div class='w-full h-10' />
-</Layout>
+</MainLayout>

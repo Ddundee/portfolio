@@ -1,11 +1,11 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import MainLayout from '../../layouts/MainLayout.astro';
 
 let date = new Date();
 let currentDate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
 ---
 
-<Layout title="Snippets">
+<MainLayout title="Snippets">
     <div class='w-full h-3' />
     <div class='flex justify-end w-full'>
         <a href='/'>
@@ -17,5 +17,5 @@ let currentDate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getF
     <h1 class='mb-3 text-6xl font-bold leading-tight text-gray-900 capitalize'>Snippets</h1>
     <p class='text-lg'>These are a collection of code snippets I&apos;ve used in the past and saved.</p>
     <div class='w-full h-10' />
-</Layout>
+</MainLayout>
 
