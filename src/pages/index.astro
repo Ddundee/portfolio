@@ -3,6 +3,16 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 let date = new Date();
 let currentDate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
+
+var today = new Date();
+    var birthDate = new Date("2006/04/08");
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+
 ---
 
 <MainLayout title="Home">
@@ -12,9 +22,9 @@ let currentDate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getF
     </div>
     <div class='w-full h-52' />
     <p>Published on: {currentDate}</p>
-    <h1 class='mb-3 text-6xl font-bold leading-tight text-gray-900'>Sup, I am <span class='rounded pt-px pb-[2px] gradient-bg'>Dhanush</span></h1>
+    <h1 class='mb-3 text-6xl font-bold leading-tight text-gray-900'>Sup, I am <span class='rounded pt-px pb-[2px] gradient-bg'>Dhanush</span>🖖</h1>
     {/* <p class='text-lg'>A 16 year-old who is a half-assed UI/UX Designer, Fullstack Developer, and Certified Video Designer based near Dallas, Texas.</p> */}
-    <p class='text-lg'>A 16 year-old based near Dallas, Texas.</p>
+    <p class='text-lg'>A {age} year-old based near Dallas, Texas.</p>
     <div class='flex flex-wrap gap-2 mt-3'>
 
         <a href='https://www.credly.com/badges/95db5aa0-2310-4a42-b9e5-408e5d5ce095' target="_blank" rel="noreferrer" class='px-3 py-2 duration-200 bg-black rounded bg-opacity-5 hover:bg-opacity-10'>Certified Video Designer</a>
