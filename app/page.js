@@ -201,11 +201,26 @@ function Loading({ percentage }) {
 }
 
 function ProgressBar({ percentage }) {
+  const [screenWidth, setScreenWidth] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="w-full md:w-[579px]">
       <motion.div
         initial={{ x: 0 }}
-        animate={{ x: (percentage / 100) * (window.innerWidth < 768 ? window.innerWidth - 48 : 531) }}
+        animate={{ x: (percentage / 100) * (screenWidth < 768 ? screenWidth - 48 : 531) }}
         transition={{ ease: "linear", duration: 0.5 }}
         className="w-12 h-12 rounded-full border-[#170202] border-[3px]"
       />
