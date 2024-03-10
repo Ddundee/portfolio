@@ -30,7 +30,7 @@ export default function QuoteCard({ }) {
       {curQuote !== undefined ? (
         <p className=" font-normal text-sm w-[464px] h-max">{quotes[curQuote]}</p>
       ) : (
-        <Skeleton />
+        <Skeleton height={12} />
       )}
       <div className="w-full h-4" />
       <div className="flex justify-end w-full h-full">
