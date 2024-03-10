@@ -1,0 +1,182 @@
+"\"There's not that much material that I can teach you, actually. I can write all the physics equations in one corner of the blackboard, and then all you need is an IQ of 5000 and you're set!\"
+","\"Relativity and quantum didn't use to be taught in this class, which is a shame, because they are two of the sexiest topics in all of physics\"
+","\"You can add vectors, multiply a vector by a number, flip vectors - the fun is just endless\"
+","\"In this first problem, there is a car driving along a cliff, and the car just jumps off. This person has decided to end it all. Now, we want to know at what time the car hits the ground. This is the beauty of physics, because if this were a psychology class we'd want to know why the person was jumping, but we are simply concerned with how long it takes.\"
+","\"Say you're firing a rocket launcher. What angle should you fire it at for maximum range? Say you fire it straight up. The good news is that it's going to be up in the air for a very long time. The bad news is that it's going to land on your head\"
+","\"You'll catch me making mistakes sometimes- I don't mind when my students do that. But not this time\"
+","\"This problem in your book says that a physicist is hiking up the Alps. You know that's a joke, right?\"
+","\"Let's say the physicist gets stuck while climbing, and you want to send him something. It may be food, or since it's a physicist, he might say 'Send me my Wolfson and Pasachoff (our textbook)! I haven't read it in two days!'\"
+","\"This is a very important day. You can forget your birthday, forget anniversaries, but you need to remember this day, because this is the day that you will learn Newton's Laws\"
+","\"That's the beauty of teaching- for 1 hour of the day you don't feel like a complete idiot because you realize that there are many people worse off than you\"
+","\"See, one reason why the Americans fought the British is because they couldn't stand their units. You know they have something called a slug? I mean, what is a slug? I don't know, and I'm proud of it!\"
+","\"Say you're in an elevator. I could do two things to you and you wouldn't know the difference. I could pull the elevator up with a rope and you'd begin to feel heavy. Or, I could replace the planet beneath you with a bigger planet and you'd feel heavy. Now most likely I'll do the first one. But you can't tell the difference!\"
+","\"People think that when you're weightless, you've escaped the pull of gravity. But when the elevator that you're in slams into the floor, then you'll know that you were wrong.\"
+","\"So today we will do the problem that makes most people never want to do physics again\"
+","\"So the normal force is pointing down, gravity is pointing down, and here is where panic sets in\"
+","\"Has everyone in here seen an integral? Good. Because I didn't have a backup plan\"
+","\"I was teaching a class over the summer, and a student began to get very agitated when I did partial derivatives. He was saying that those weren't a prerequisite for the class, so I shouldn't be teaching them. So I said to him 'you know, the thing about coming to class is- you actually might learn something!'\"
+","\"When you draw a box around something, you know it's time to get serious\"
+","\"What I see is, the mathematicians tell us what the rules are, and then it's our job to break them\"
+","\"You could write a law and think it's correct, and then you'd publish a bunch of papers, and eventually you'd realize that your parents are the only ones reading them and then you'd know that you were wrong. Now, on the other hand, if your friends are reading your papers, your enemies are reading your papers, and then your enemies are stealing what you've written in your papers, then you'll know that your law is correct\"
+","\"I've gotta be nice to my students, because one day one of you could be my physician. I could be lying flat on my back, and you could be coming up to me with a mask on and a knife in your hand. I'd say 'What about my anesthesia?' and you'd say 'What about that formula sheet you promised me?', so that's why I try to treat you guys nicely\"
+","\"So Newton said 'I will go invent integral calculus.' After all, he just invented differential calculus the other day, so why shouldn't he?\"
+","\"When you're doing problems on the blackboard your intelligence is proportional to your distance from the board, so now I'm at an all time low\"
+","\"At the end, I want to make sure that you all understand this. No child will be left behind\"
+","\"The thing is, nature doesn't care whether you like something or not - you just have to suck it up\"
+","\"The question you have to ask yourself is, if your professor drops dead in the middle of his lecture, will you be able to finish deriving the equation he started? If so, then you know you're doing okay\"
+","\"Event number 1: I invent the gun.\" *makes gun with fingers and points it at head* \"Event number 2: I blow my brains out. I was going to point the gun at one of you guys but I didn't want any problems\"
+","*writes something on board* \"NO! Don't write that down! Bad!!!\"
+","\"Many people think that, since they're going to be doctors or something, they're never going to need to know about relativity. Well what if one of your patients starts running away from you at the speed of light? Then you really need to know this\"
+","\"Today we are going to talk about rigid bodies. Like Al Gore.\"
+","\"If we throw a cat up in the air it will be moving its arms and legs all around, and that's not rigid. We want a rigid body, like a dead cat\"
+","\"If you look at all the doors at Yale you will notice that the doorknobs are on the opposite side as the hinges, so you get the most action with the least amount of force. Now if you go to Moronland, the doorknobs are all close to the hinges and you can never get anything accomplished\" 
+","(after drawing his “ballerina” on the chalkboard, which I have attempted to recreate here)
+","
+“I guess it’s better to try and fail than not to try at all”
+
+“This is the address that I got this email from: aaa.bbb. So dear aaa, if I can call you by your first name” *pauses* “Yes, I’ve reached the point in my life when I don’t care what people think about me”  
+","
+“If I could tag the air molecules – this is Joe, Joe, what are you doing? Generally, Joe is just going back and forth”  
+","
+“The Earth’s whole mass – you, me, China – everything is pulling it down”  
+","
+“Did you guys watch the NOVA program last night? No, you were watching Joe Millionaire. Well, I watched the NOVA program”  
+","
+“Let’s say a bunch of guys are chasing you and they fire a bunch of bullets at you, and then another group of guys runs towards you from the front and they fire a bunch of bullets at you. Now, by in large, your life’s about to get worse. Now if they were firing sound waves at you, this wouldn’t be the case.”  
+","
+“Never trust a log plot. And especially never trust a log log plot”  
+","
+“If you miss class you should talk to someone, because I don’t go straight from the book. If you read the whole book you run the risk of learning something you don’t need to know. And who wants to do that?”  
+","(talking about how railroad track engineers added gaps in the tracks to account for thermal expansion) “If you go look at railroad tracks now, they don’t have these gaps anymore. I don’t know what the hell is going on with that. I guess I could go on the internet and find out, but it doesn’t make sense to me. Metal doesn’t bend anymore?”  
+","
+“You can talk to Martians, talk to The Planet of the Apes, tell the apes to gather some gas in a jar, and say ‘Hey apes! When PV=0 then T=-273!’”  
+","
+“But if you’re from Harvard, you think the center of the universe is here, in Cambridge”  
+","
+“Come on now, make big diagrams! If you want to save trees, do it on your own time – not in my course!”  
+","
+“I’ve found specific heats for objects in my house when I forget where I left them and then smell them burning. I’ve even found the melting points of some of these objects!”  
+","
+“The whole point of the War of Independence was so that we don’t have to use BTUs anymore. So why are we still doing it??”  
+","
+“What are two colors you combine to make another? Green and red make yellow?”  
+","
+“You could be heating any object. If you are heating an elephant, m is the mass of the elephant, t is the temperature of the elephant, and c is the specific heat of the elephant.”  
+","
+“If you put your hand on a hot plate, you should say ‘Wow, these molecules are fast!’. That’s what I want you to say from now on, not ‘Ouch!!””  
+","(Shankar “quoting” Carnot) “No engine can beat my engine”  
+","
+“Having defined entropy, I’m now going to show you the mega second law”  
+","
+“You may be questioned by the Mafia someday. And it’s standard practice for them to lower you down in this tank of water. So when you’re pushing out on the walls, trying to save yourself, think to yourself – how many Newtons am I applying to this wall? – because you’re causing pressure!”  
+","
+“There are some congressmen who have physics degrees, so you can’t bullshit them. You can come up to them and say ‘Hey Congressmen!’ and throw torques at them, and fluids and relativity, and they’re not gonna care. They’re just gonna laugh in your face”  
+","
+Shankar: “Any suggestions on how to make up for the missed class?” Student: “Put the lecture online?” Shankar: “How can I convey the full force of my personality online?”  
+","
+“If you don’t try to beat the 4 pi now, you’ll have to beat it later. You have to make a choice.”  
+","
+“Now if you rub this rod on your cat, or dog, or cow, or buffalo…”  
+","*messes up demonstration* “You know, some of us go into theoretical physics for a very good reason”  
+","
+“You can also draw a mega sphere that will surround both of them”  
+","
+“All we need to solve this problem is Gauss’s Law and several large hand-waving arguments”  
+","(definitely college physics…does this sound wrong to anyone else?) “If you’re a vector and you really wanna produce a number, you’ve gotta have a dot product with somebody”  
+","(just before leaving on a 10 day trip) “See you suckers! I’m going where the sun is shining and it’s 75 degrees all day!!! Bye!”  
+","
+“I’m gonna go home and pick a day for the midterm, and you’ve gotta let me know if this is a problem. So if you’re getting married that day, bring in your spouse-to-be, and if you’re gonna have a heart transplant, I wanna see the new heart”  
+","
+“It may relieve you to know that there’s only a finite charge, but there’s still high voltage. That’s why there are all those labels saying ‘Don’t swallow this computer’”  
+","
+“No, not strings, strings are chapter 9600 of this course”  
+","
+“There was an event in which someone claimed that they saw a monopole, but that happened somewhere in California, so we don’t know what to think about that”  
+","
+“Now that is the magic thing that tells us everything”  
+","
+“If you are a complete moron, you will take your wire all the way, but as the limit of moron is infinite, you will have wasted all your wire on a loop of zero area”  
+","
+“I just love this problem, because it has no numbers! I mean, here’s mu, here’s B, and everybody’s happy!”  
+","*draws loop in two planes*
+","
+“Okay, here is your Valentine’s Day loop”  
+","
+“The attraction due to the wires is just one big orgy of cross products”  
+","
+“If you want electricity in your house, just build your house on a big loop and get somebody to drag your house along”  
+","
+“Why is Lenz’s Law looking so difficult? Because of the way I taught it!”  
+","
+“’I’ could be anything. It could be current, it could be the GNP of some country, whatever – we don’t care”  
+","
+“That’s why I’m telling you all to go do physics for the rest of your lives. It’s fun, and if you’re lucky, you might actually get paid!”  
+","
+“If you’re a lawyer who can do percolation equations, you’ll be the lawyer who can’t be beat – you can have your own tv show”  
+","
+“Plus, since you’re coming out of Yale, barring a few particular exceptions, you can speak good English and do a good service leading this country”  
+","
+“There is one congressman who knows physics, and he’s just bullying everybody around, because when he writes an equation down, none of the rest of them know what to do!”  
+","
+“Now I’m going to do the mother of all circuits”  
+","
+“When you open this switch you gotta close the second one immediately so that it can vent all its frustration into this guy”  
+","
+“There are some things you can always look up, like your social security number or your birthday, but the trig identities you gotta know”  
+","
+“Who knows complex numbers? You don’t know complex numbers? Well how do you do your taxes?”  
+","
+“You just gotta suck it up, okay – complex numbers are here to stay, they rule the world…once you get to know them your relationship will go from hate to love very fast”  
+","
+“In E&M it’s harder because you can’t see or feel magnetic fields, unless you’re a duck. I’m told that when they’re flying north they follow the earth’s magnetic field to the pole. I was quite impressed with the ducks – they don’t even have to solve Maxwell’s equations to follow the field, and yet I get lost in Manhattan!”  
+","
+“I know most days after 50 minutes you guys go into little convulsions and send me not so subtle hints that time is up – but not this day”  
+","
+“And that was the big, all-time, physics aha! Moment”  
+","
+“And this equals this, and that is also wrong”  
+","
+“Yes, you will find that you have three or four hands, and many organs on top of your head…but I think going to a Sting concert is more dangerous to your health”  
+","
+“If you’re running next to a truck at the same speed, you are not a truck!!!”  
+","
+“If you’re talking at a really high frequency, the guy around the corner won’t hear you, but you had better be talking to your dog, because someone right in front of you won’t hear you either”  
+","
+“If you have a question, call me, because I don’t answer email. I come from a generation where it is impossible for me to sit down and figure out where all these letters are. Why did they have to scramble them all up?? I’ve seen my kids in this catatonic state in front of the computer, doing instant messaging, but I just can’t do it. So if you emailed me a long question about the meaning of life and I didn’t respond, don’t worry. I know the meaning of life, okay – just call me.”  
+","
+“Say you are at the bottom of this pool of water. I don’t know how you got there – maybe you missed a loan payment or something”  
+","*draws a small diagram* “This is how I get my revenge on you guys. I don’t know where you learned that homework should only take two sheets of paper, but I’ve seen you guys pack in superstrings and everything in just a little space”  
+","
+“You have 4 times 3 divided by 2 combinations of rays you can draw, so that is what?…um, some number of choices”  
+","
+“When I was a student I used to just draw two rays and be done with it, but now that I am nearing retirement I am so excited to draw all these different rays and see that they all hit the same spot. You guys don’t know how much pleasure this gives me”  
+","
+“It’s okay if you don’t get it, because if you all do get it then I’m out of a job. I rely on you guys not getting it.”  
+","
+“It’s a good thing that I made this mistake, because it shows you that even if you can’t solve this equation you can still get a job at Yale. And, if you are beating yourself up over the midterm, my embarrassment should provide some comfort to you”  
+","
+“We’re going to go over this again, as part of our No Child Left Behind program. Some children were left behind Wednesday, I know, because I saw lots of puzzled faces”  
+","*draws a diagram that takes up a quarter of the board* “Who was it who was asking me to draw big pictures?” *Wynn raises hand* “Okay, this one’s for you!”  
+","
+“When you have an i on the bottom you replace it with a negative i on the top. This has been known since Biblical times- an i for an i”  
+","
+“The act of observing an electron is very traumatic for that electron. Right now I’m getting hit by millions of photons. I’m taking it like a man. But for the electron, this is not the same”  
+","
+“I forgot what my life was like before quantum mechanics. I know I was playing in a sandbox and someone was trying to beat me up, but I don’t remember when that was.”  
+","*does an example, Gershkoff corrects his vocabulary* “This also illustrates the unimportance of terminology”  
+","
+“This is very different from a graduate quantum course which I could teach in my sleep and which you could listen to in your sleep. Here, everyone needs to be awake – this causes some added difficulty”  
+","
+“If you live 15 billion years, then you will be able to see the back of your head”  
+","
+“You might turn down your light source, but there will still be photons carrying energy that are hitting the particle. You can take a gun and weaken it so that it only shoots a few bullets a day, but if you get hit by one, you’re still dead”  
+","
+“You guys didn’t get that email last night? I sent that at 11 – a good 4 hours past my bedtime!”  
+","
+“These tools are invented by mathematicians for their own nefarious purposes, but they are actually very useful for us”  
+","
+“Mathematicians are always ahead of physicists, and physicists are always a little bit ahead of engineers, although that difference is not always clear anymore. It’s because it takes so much time for our president to catch up with everything. He says ‘How many barrels of oil will we save by you studying quantum mechanics?’ and then we say ‘Well, zero barrels’ and he gets confused. So either you find this quantum stuff very useful or just use it to scare the hell out of everyone else”
+
+“You can only have a state of definite momentum if you have e to the i dog x over h bar, where you have momentum equal to dog”
+
+“Say you are a prisoner in a jail. If you are a quantum prisoner, your wavelength will be changing. So if you are a prisoner this is what I recommend to you – go back and forth banging into each wall, because there is a slight probability that if you keep doing this, you will find yourself outside of the jail. So even if you are sentenced for 100 lifetimes, it’s still worth a try.”

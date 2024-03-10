@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --text: #170202;
+    --background: #fffefe;
+    --primary: #f51919;
+    --secondary: #eb9393;
+    --accent: #FBE8E8;
+  }
+}
+
+@layer base {
+  :root {
+    --card-background: var(--accent);
+  }
+}
+
+
+/* @layer base {
+  :root {
+    --background: ${bgL.hslRaw};
+    --foreground: ${textL.hslRaw};
+    --card: ${bgL.hslRaw};
+    --card-foreground: ${textL.hslRaw};
+    --popover: ${bgL.hslRaw};
+    --popover-foreground: ${textL.hslRaw};
+    --primary: ${primaryL.hslRaw};
+    --primary-foreground: ${primaryFgL.hslRaw};
+    --secondary: ${secondaryL.hslRaw};
+    --secondary-foreground: ${secondaryFgL.hslRaw};
+    --muted: ${bgL.hslRaw.20};
+    --muted-foreground: ${textL.hslRaw.70};
+    --accent: ${accentL.hslRaw};
+    --accent-foreground: ${accentFgL.hslRaw};
+    --destructive: 0 85% 60%;
+    --destructive-foreground: ${textL.hslRaw};
+    --border: ${bgL.hslRaw.20};
+    --input: ${bgL.hslRaw.20};
+    --ring: ${accentL.hslRaw.40};
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: ${bgD.hslRaw};
+    --foreground: ${textD.hslRaw};
+    --card: ${bgD.hslRaw};
+    --card-foreground: ${textD.hslRaw};
+    --popover: ${bgD.hslRaw};
+    --popover-foreground: ${textD.hslRaw};
+    --primary: ${primaryD.hslRaw};
+    --primary-foreground: ${primaryFgD.hslRaw};
+    --secondary: ${secondaryD.hslRaw};
+    --secondary-foreground: ${secondaryFgD.hslRaw};
+    --muted: ${bgD.hslRaw.80};
+    --muted-foreground: ${textD.hslRaw};
+    --accent: ${accentD.hslRaw};
+    --accent-foreground: ${accentFgD.hslRaw};
+    --destructive: 0 62% 30%;
+    --destructive-foreground: ${textD.hslRaw.10};
+    --border: ${bgD.hslRaw.60};
+    --input: ${bgD.hslRaw.80};
+    --ring: ${accentD.hslRaw.60};
+  }
+}
+
+
+
+@layer base {
+  :root {
+    --background: 0 100% 100%;
+    --foreground: 0 84% 5%;
+    --card: 0 100% 100%;
+    --card-foreground: 0 84% 5%;
+    --popover: 0 100% 100%;
+    --popover-foreground: 0 84% 5%;
+    --primary: 0 92% 53%;
+    --primary-foreground: 0 84% 5%;
+    --secondary: 0 69% 75%;
+    --secondary-foreground: 0 84% 5%;
+    --muted: 0 100% 20%;
+    --muted-foreground: 0 84% 70%;
+    --accent: 0 91% 62%;
+    --accent-foreground: 0 84% 5%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 84% 5%;
+    --border: 0 100% 20%;
+    --input: 0 100% 20%;
+    --ring: 0 91% 40%;
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 84% 95%;
+    --card: 0 0% 0%;
+    --card-foreground: 0 84% 95%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 84% 95%;
+    --primary: 0 92% 47%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 69% 25%;
+    --secondary-foreground: 0 84% 95%;
+    --muted: 0 0% 80%;
+    --muted-foreground: 0 84% 95%;
+    --accent: 0 91% 38%;
+    --accent-foreground: 0 84% 95%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 84% 10%;
+    --border: 0 0% 60%;
+    --input: 0 0% 80%;
+    --ring: 0 91% 60%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=IM%20Fell%20French%20Canon:700|IM%20Fell%20French%20Canon:400');
+
+body {
+  font-family: 'IM Fell French Canon';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'IM Fell French Canon';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+/* h1 {font-size: 5.652rem; 90.4px} */
+
+/* h2 {font-size: 3.997rem; 64px} */
+
+/* h3 {font-size: 2.827rem; 45.28px} */
+
+/* h4 {font-size: 1.999rem; 32px} */
+
+/* h5 {font-size: 1.414rem; 22.56px} */
+
+/* small {font-size: 0.707rem; 11.36px} */
