@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import QuoteCard from "../components/quoteCard";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Bevan } from "next/font/google";
@@ -34,7 +33,7 @@ export default function Home() {
 
             if (percentage === 100) {
                 setTimeout(() => {
-                    handleToastDismiss();
+                    // handleToastDismiss();
                     setPageLoaded(true);
                 }, 1);
             } else {
@@ -46,8 +45,8 @@ export default function Home() {
     }, []);
 
 
-    if (!pageLoaded) return <Loading percentage={loadingPercentage} />;
-    else
+    // if (!pageLoaded) return <Loading percentage={loadingPercentage} />;
+    // else
         return (
             <SmoothScroll>
                 <div className="w-full h-full flex justify-center align-middle font-geist_sans">
@@ -113,82 +112,82 @@ export default function Home() {
         );
 }
 
-let handleToastDismiss;
+// let handleToastDismiss;
 
-function Loading({ percentage }) {
-    const toastRef = useRef(null);
+// function Loading({ percentage }) {
+//     const toastRef = useRef(null);
 
-    const handleDismiss = () => {
-        if (toastRef.current !== null) {
-            toast.dismiss(toastRef.current);
-            toastRef.current = null;
-        }
-    };
+//     const handleDismiss = () => {
+//         if (toastRef.current !== null) {
+//             toast.dismiss(toastRef.current);
+//             toastRef.current = null;
+//         }
+//     };
 
-    useEffect(() => {
-        if (toastRef.current === null) {
-            toastRef.current = toast((t) => <QuoteCard />, {
-                duration: Infinity,
-            });
-        }
+//     useEffect(() => {
+//         if (toastRef.current === null) {
+//             toastRef.current = toast((t) => <QuoteCard />, {
+//                 duration: Infinity,
+//             });
+//         }
 
-        handleToastDismiss = handleDismiss;
-        return handleDismiss;
-    }, []);
+//         handleToastDismiss = handleDismiss;
+//         return handleDismiss;
+//     }, []);
 
-    return (
-        <div className="font-geist_sans">
-            <Toaster
-                position="bottom-left"
-                reverseOrder={false}
-                toastOptions={{
-                    style: {
-                        background: "none",
-                        boxShadow: "none",
-                        padding: "0",
-                        margin: "0",
-                        border: "none",
-                    },
-                }}
-            />
-            <div className="w-screen h-screen flex justify-center items-center">
-                <div>
-                    <ProgressBar percentage={percentage} />
-                    <div className="w-full h-[14px]" />
-                    <div className="flex justify-center text-[#170202] font-normal text-xl">
-                        <p>{percentage}%</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
+//     return (
+//         <div className="font-geist_sans">
+//             <Toaster
+//                 position="bottom-left"
+//                 reverseOrder={false}
+//                 toastOptions={{
+//                     style: {
+//                         background: "none",
+//                         boxShadow: "none",
+//                         padding: "0",
+//                         margin: "0",
+//                         border: "none",
+//                     },
+//                 }}
+//             />
+//             <div className="w-screen h-screen flex justify-center items-center">
+//                 <div>
+//                     <ProgressBar percentage={percentage} />
+//                     <div className="w-full h-[14px]" />
+//                     <div className="flex justify-center text-[#170202] font-normal text-xl">
+//                         <p>{percentage}%</p>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }
 
-function ProgressBar({ percentage }) {
-    const [screenWidth, setScreenWidth] = useState(0);
+// function ProgressBar({ percentage }) {
+//     const [screenWidth, setScreenWidth] = useState(0);
 
-    useEffect(() => {
-        const handleResize = () => {
-            setScreenWidth(window.innerWidth);
-        };
+//     useEffect(() => {
+//         const handleResize = () => {
+//             setScreenWidth(window.innerWidth);
+//         };
 
-        setScreenWidth(window.innerWidth);
-        window.addEventListener("resize", handleResize);
+//         setScreenWidth(window.innerWidth);
+//         window.addEventListener("resize", handleResize);
 
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
+//         return () => {
+//             window.removeEventListener("resize", handleResize);
+//         };
+//     }, []);
 
-    return (
-        <div className="w-full md:w-[579px]">
-            <motion.div
-                initial={{ x: 0 }}
-                animate={{ x: (percentage / 100) * (screenWidth < 768 ? screenWidth - 48 : 531) }}
-                transition={{ ease: "linear", duration: 0.5 }}
-                className="w-12 h-12 rounded-full border-[#170202] border-[3px]"
-            />
-            <div className="h-[3px] bg-[#170202] w-full md:w-[579px] rounded-full" />
-        </div>
-    );
-}
+//     return (
+//         <div className="w-full md:w-[579px]">
+//             <motion.div
+//                 initial={{ x: 0 }}
+//                 animate={{ x: (percentage / 100) * (screenWidth < 768 ? screenWidth - 48 : 531) }}
+//                 transition={{ ease: "linear", duration: 0.5 }}
+//                 className="w-12 h-12 rounded-full border-[#170202] border-[3px]"
+//             />
+//             <div className="h-[3px] bg-[#170202] w-full md:w-[579px] rounded-full" />
+//         </div>
+//     );
+// }
