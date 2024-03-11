@@ -45,3 +45,7 @@ body {
   overflow: hidden;
   will-change: transform;
 }
+
+.wordle-solver {
+  background: linear-gradient(243deg, #00E68C 22.45%, #3AFFB2 91.51%);
+}
