@@ -49,3 +49,10 @@ body {
 .wordle-solver {
   background: linear-gradient(243deg, #00E68C 22.45%, #3AFFB2 91.51%);
 }
+
+.wdlm {
+  background: url("./../public/wdlm.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
