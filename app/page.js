@@ -9,6 +9,7 @@ import { Bevan } from "next/font/google";
 import Image from "next/image";
 import pic1 from "./../public/1.webp";
 import pic2 from "./../public/2.webp";
+import SmoothScroll from "./components/smoothScroll";
 
 const bevan = Bevan({ subsets: ["latin-ext"], weight: ["400"] });
 
@@ -42,6 +43,7 @@ export default function Home() {
   if (!pageLoaded) return <Loading percentage={loadingPercentage} />;
   else
     return (
+      <SmoothScroll>
       <div className="w-full h-full flex justify-center align-middle font-geist_sans">
         <Toaster
           position="bottom-left"
@@ -146,6 +148,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </SmoothScroll>
     );
 }
 
