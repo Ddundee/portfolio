@@ -18,7 +18,7 @@ export default function PageTemplate({children}) {
         return () => {
             window.removeEventListener('resize', handleWindowSizeChange);
         }
-    }, [window.innerWidth]);
+    }, []);
 
     const isMobile = width <= 768;
 
