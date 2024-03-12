@@ -11,45 +11,14 @@ import pic2 from "./../public/2.webp";
 import pic3 from "./../public/3.webp";
 import { FaPython } from "react-icons/fa";
 
-import SmoothScroll from "./components/smoothScroll";
-import NavBar from "./components/navbar";
-import Footer from "./components/footer";
-
-const bevan = Bevan({ subsets: ["latin-ext"], weight: ["400"] });
+import SmoothScroll from "./../components/smoothScroll";
+import NavBar from "./../components/navbar";
+import Footer from "./../components/footer";
+import PageTemplate from "./../components/pageTemplate";
 
 export default function Home() {
-  const [pageLoaded, setPageLoaded] = useState(false);
-  const [loadingPercentage, setLoadingPercentage] = useState(0);
-
-  useEffect(() => {
-    const updateLoadingPercentage = () => {
-      const { loadEventEnd, navigationStart } = performance.timing;
-      const pageLoadTime = loadEventEnd - navigationStart;
-      const percentage = Math.min(
-        Math.floor((performance.now() / pageLoadTime) * 100),
-        100
-      );
-      setLoadingPercentage(percentage);
-
-      if (percentage === 100) {
-        setTimeout(() => {
-          // handleToastDismiss();
-          setPageLoaded(true);
-        }, 1);
-      } else {
-        requestAnimationFrame(updateLoadingPercentage);
-      }
-    };
-
-    requestAnimationFrame(updateLoadingPercentage);
-  }, []);
-
-
-  // if (!pageLoaded) return <Loading percentage={loadingPercentage} />;
-  // else
   return (
-    <SmoothScroll>
-      {/* <CustomCursor /> */}
+    <PageTemplate>
       <div className="w-full h-full flex justify-center align-middle font-geist_sans">
         <Toaster
           position="bottom-left"
@@ -133,86 +102,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </SmoothScroll>
+    </PageTemplate>
   );
 }
-
-// let handleToastDismiss;
-
-// function Loading({ percentage }) {
-//   const toastRef = useRef(null);
-
-//   const handleDismiss = () => {
-//     if (toastRef.current !== null) {
-//       toast.dismiss(toastRef.current);
-//       toastRef.current = null;
-//     }
-//   };
-
-//   useEffect(() => {
-//     if (toastRef.current === null) {
-//       toastRef.current = toast((t) => <QuoteCard />, {
-//         duration: Infinity,
-//       });
-//     }
-
-//     handleToastDismiss = handleDismiss;
-//     return handleDismiss;
-//   }, []);
-
-//   return (
-//     <div className="font-geist_sans">
-//       <Toaster
-//         position="bottom-left"
-//         reverseOrder={false}
-//         toastOptions={{
-//           style: {
-//             background: "none",
-//             boxShadow: "none",
-//             padding: "0",
-//             margin: "0",
-//             border: "none",
-//           },
-//         }}
-//       />
-//       <div className="w-screen h-screen flex justify-center items-center">
-//         <div>
-//           <ProgressBar percentage={percentage} />
-//           <div className="w-full h-[14px]" />
-//           <div className="flex justify-center text-[#170202] font-normal text-xl">
-//             <p>{percentage}%</p>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// function ProgressBar({ percentage }) {
-//   const [screenWidth, setScreenWidth] = useState(0);
-
-//   useEffect(() => {
-//     const handleResize = () => {
-//       setScreenWidth(window.innerWidth);
-//     };
-
-//     setScreenWidth(window.innerWidth);
-//     window.addEventListener("resize", handleResize);
-
-//     return () => {
-//       window.removeEventListener("resize", handleResize);
-//     };
-//   }, []);
-
-//   return (
-//     <div className="w-full md:w-[579px]">
-//       <motion.div
-//         initial={{ x: 0 }}
-//         animate={{ x: (percentage / 100) * (screenWidth < 768 ? screenWidth - 48 : 531) }}
-//         transition={{ ease: "linear", duration: 0.5 }}
-//         className="w-12 h-12 rounded-full border-[#170202] border-[3px]"
-//       />
-//       <div className="h-[3px] bg-[#170202] w-full md:w-[579px] rounded-full" />
-//     </div>
-//   );
-// }
