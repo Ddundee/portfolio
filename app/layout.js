@@ -2,6 +2,7 @@ import "./globals.css";
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: "Dhanush C.",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       
         {children}
         <Analytics debug={false} />
+        <SpeedInsights debug={false}/>
       </body>
     </html>
   );

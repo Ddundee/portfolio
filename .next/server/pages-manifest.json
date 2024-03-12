@@ -2,6 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/blog": "pages/api/blog.js",
-  "/api/increment_views/[slug]": "pages/api/increment_views/[slug].js"
+  "/api/blog": "pages/api/blog.js"
 }
