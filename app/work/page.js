@@ -1,14 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { Bevan } from "next/font/google";
-import Image from "next/image";
+import { Toaster } from "react-hot-toast";
 import PageTemplate from './../../components/pageTemplate'
 
-import SmoothScroll from "./../../components/smoothScroll";
 import ProjectCard from "../../components/projectCard";
 import NavBar from "../../components/navbar";
 import Footer from "../../components/footer";

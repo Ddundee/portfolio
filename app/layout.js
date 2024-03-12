@@ -2,7 +2,6 @@ import "./globals.css";
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import { Analytics } from "@vercel/analytics/react"
-import { motion } from 'framer-motion';
 
 export const metadata = {
   title: "Dhanush C.",
@@ -14,10 +13,10 @@ export default function RootLayout({ children }) {
     <html className={`${GeistSans.variable} ${GeistMono.variable} selection:bg-[#f51919] selection:bg-opacity-55`} lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body>
-      <Analytics/>
+      
       
         {children}
-        
+        <Analytics debug={false} />
       </body>
     </html>
   );
