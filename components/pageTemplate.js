@@ -9,7 +9,7 @@ export default function PageTemplate({children}) {
 
     function handleWindowSizeChange() {
         setWidth(window.innerWidth);
-        console.log(isMobile);
+        console.log("Is Mobile: " + isMobile);
 
     }
     useEffect(() => {

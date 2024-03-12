@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import Footer from "../../../components/footer";
 import NavBar from "../../../components/navbar";
 import PageTemplate from "../../../components/pageTemplate";
@@ -7,17 +8,25 @@ import { useRouter } from "next/navigation";
 
 export default function Page({ params }) {
 
-  let isValid = false;
-  let blog;
+  const [blogs, setBlogs] = useState(null);
+	useEffect(() => {
+		(async () => {
+			try {
+				const response = await fetch("/api/blog");
+				const data = await response.json();
+				setBlogs(data);
+			} catch (error) {
+				console.error("Error fetching data:", error);
+			}
+		})();
+	}, []);
 
-  blogContent.forEach(b => {
-    if (params.slug === b.name.toLowerCase().split(' ').join('-')) {
-      isValid = true;
-      blog = b;
-    }
-  })
+  console.log(blogContent)
+  let blog = blogContent.find((element) => element._id === params.slug);
 
-  if (isValid)
+ 
+
+  if (blog)
     return (
       <PageTemplate>
         <div className="w-full h-full flex justify-center align-middle font-geist_sans">
