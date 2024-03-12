@@ -1,23 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
-import { motion } from "framer-motion";
+import { useState } from "react";
 import Link from "next/link";
-import { Bevan } from "next/font/google";
-import Image from "next/image";
-
-import SmoothScroll from "./../components/smoothScroll";
-import ProjectCard from "../components/projectCard";
-import NavBar from "../components/navbar";
-import Footer from "../components/footer";
-import PageTemplate from "../components/pageTemplate";
 
 
-export default function BlogLink({title, href}) {
-    const [count, setCount] = useState(0);
 
-  
+export default function BlogLink({title, href, views}) {
 
     if(!title) {
         title = 'Untitled';
@@ -27,11 +15,34 @@ export default function BlogLink({title, href}) {
         href = "/blog/" + title.toLowerCase().split(' ').join('-');
     }
 
+
+    const incrementViews = async () => {
+        try {
+          const response = await fetch("/api/increment-views", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ name: href }),
+          });
+    
+          if (response.ok) {
+            const updatedBlog = await response.json();
+            setCount(updatedBlog.views);    
+          } else {
+            console.error("Error incrementing views:", response.status);
+          }
+        } catch (error) {
+          console.error("Error incrementing views:", error);
+        }
+      };
+    
+
     return (
-        <div className="hover:opacity-65 duration-500">
+        <div className="hover:opacity-65 duration-500" onClick={incrementViews}>
             <Link href={href}>
                 <h1 className="text-xl md:text-2xl font-light">{title}</h1>
-                <p>{count} views</p>
+                <p>{views} views</p>
             </Link>
         </div>
     );

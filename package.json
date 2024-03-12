@@ -27,7 +27,8 @@
     "react-icons": "^5.0.1",
     "resize-observer-polyfill": "^1.5.1",
     "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "title-case": "^4.3.1"
   },
   "devDependencies": {
     "@types/node": "20.11.25",
