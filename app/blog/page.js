@@ -58,7 +58,7 @@ export default function Home() {
 								? blogs.map((blog) => (
 										<BlogLink
                                             blog={blog}
-											key={blog.id}
+											key={blog._id}
 											
 										/>
 								  ))

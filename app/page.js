@@ -45,7 +45,7 @@ export default function Home() {
                 I'm an incoming freshmen at Virginia Tech majoring in Computer
                 Science, with a strong passion in robotics, and machine
                 learning. I hope to gain expertise in computer science and AIML
-                through internships at STEM companies.
+                through internships at STEM companies and building personal projects.
               </p>
               <p className="text-xl md:text-2xl font-light">
                 I have extensive experience with competition robotics. I was

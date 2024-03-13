@@ -1,4 +1,4 @@
-import { MongoClient, ServerApiVersion } from "mongodb";
+import { MongoClient, ObjectId, ServerApiVersion } from "mongodb";
 
 const uri = process.env.URI;
 
@@ -17,12 +17,13 @@ export default async function handler(req, res) {
 			await client.connect();
 			const database = client.db("port");
 			let blogs = database.collection("port");
-			const query = { name: slug };
+			const query = { "_id": new ObjectId(slug) };
 			await blogs.updateOne(query, { $inc: { views: 1 } });
 
 			blogs = await database
 				.collection("port")
 				.find()
+				// .filter(query)
 				.sort({ views: -1 })
 				.toArray();
 			res.json(blogs);
