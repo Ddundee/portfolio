@@ -1,20 +1,11 @@
 'use client';
 
-import {useEffect, useRef, useState} from 'react';
-import toast, {Toaster} from 'react-hot-toast';
-import {motion} from 'framer-motion';
-import Link from 'next/link';
-import {Bevan} from 'next/font/google';
-import Image from 'next/image';
-import pic1 from './../public/1.webp';
-import pic2 from './../public/2.webp';
-import pic3 from './../public/3.webp';
-import {FaPython} from 'react-icons/fa';
+import { Toaster } from 'react-hot-toast';
 
-import SmoothScroll from '../components/smoothScroll';
 import NavBar from '../components/navbar';
 import Footer from '../components/footer';
 import PageTemplate from '../components/pageTemplate';
+import React from 'react';
 
 export default function Home() {
   return (

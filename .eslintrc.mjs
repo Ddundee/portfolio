@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['google', 'plugin:react/recommended'],
+  extends: ['standard-with-typescript', 'plugin:react/recommended'],
   overrides: [
     {
       env: {
@@ -21,5 +21,4 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {},
-  maxLen: ['warning'],
 };
