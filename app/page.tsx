@@ -11,10 +11,10 @@ import pic2 from './../public/2.webp';
 import pic3 from './../public/3.webp';
 import {FaPython} from 'react-icons/fa';
 
-import SmoothScroll from './../components/smoothScroll';
-import NavBar from './../components/navbar';
-import Footer from './../components/footer';
-import PageTemplate from './../components/pageTemplate';
+import SmoothScroll from '../components/smoothScroll';
+import NavBar from '../components/navbar';
+import Footer from '../components/footer';
+import PageTemplate from '../components/pageTemplate';
 
 export default function Home() {
   return (

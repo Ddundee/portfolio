@@ -1,7 +1,7 @@
 'use client';
 
 import {Toaster} from 'react-hot-toast';
-import PageTemplate from './../../components/pageTemplate';
+import PageTemplate from '../../components/pageTemplate';
 
 import ProjectCard from '../../components/projectCard';
 import NavBar from '../../components/navbar';

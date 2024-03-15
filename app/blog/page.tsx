@@ -13,10 +13,8 @@ import blogContent from '../../util/blogContent';
 import {useEffect, useState} from 'react';
 import {titleCase} from 'title-case';
 
-// export const revalidate = 0; // Mark this component as a Server Component
-
 export default function Home() {
-  const [blogs, setBlogs] = useState(null);
+  const [blogs, setBlogs]: any = useState(null);
 
   useEffect(() => {
     (async () => {
@@ -53,7 +51,7 @@ export default function Home() {
               My blog... Your not supposed to be here?
             </h1>
             <div className='flex flex-col gap-6'>
-              {blogs
+              {blogs !== null && blogs !== undefined
                 ? blogs.map((blog) => <BlogLink blog={blog} key={blog._id} />)
                 : blogContent.map((blog) => (
                     <BlogLink blog={blog} key={blog._id} />
