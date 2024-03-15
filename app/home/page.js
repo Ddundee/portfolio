@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import PageTemplate from './../../components/pageTemplate';
+import PageTemplate from '../../components/pageTemplate';
 import React from 'react';
 
 /**
