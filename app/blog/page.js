@@ -1,6 +1,6 @@
 'use client';
 
-import {Toaster} from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
 import NavBar from '../../components/navbar';
 import Footer from '../../components/footer';
@@ -10,11 +10,11 @@ import QuoteCard from '../../components/quoteCard';
 import BlogLink from '../../components/blogLink';
 // import { MongoClient, ServerApiVersion } from "mongodb";
 import blogContent from '../../util/blogContent';
-import {useEffect, useState} from 'react';
-import {titleCase} from 'title-case';
+import { useEffect, useState } from 'react';
+import { titleCase } from 'title-case';
 
 export default function Home() {
-  const [blogs, setBlogs]: any = useState(null);
+  const [blogs, setBlogs] = useState(null);
 
   useEffect(() => {
     (async () => {
