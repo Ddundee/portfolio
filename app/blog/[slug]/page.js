@@ -1,10 +1,10 @@
 'use client';
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 import Footer from '../../../components/footer';
 import NavBar from '../../../components/navbar';
 import PageTemplate from '../../../components/pageTemplate';
 import blogContent from '../../../util/blogContent';
-import { useRouter } from 'next/navigation';
+import {useRouter} from 'next/navigation';
 import './../../../styles/blogs.css';
 import React from 'react';
 
@@ -17,7 +17,7 @@ import React from 'react';
  * @param {string} props.params.slug - The slug of the blog post.
  * @return {JSX.Element|null} The rendered page for the blog post
  */
-export default function Page({ params }) {
+export default function Page({params}) {
   const [blogs, setBlogs] = useState(null);
   let i = 0;
   useEffect(() => {

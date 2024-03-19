@@ -1,9 +1,8 @@
 'use client';
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Skeleton from './skeleton';
-import {Toaster} from 'react-hot-toast';
 
-export default function ProjectCard({bg, href, name}) {
+export default function ProjectCard({ bg, href, name }) {
   if (!bg) bg = 'bg-[#fbe8e8]';
   if (!name) name = 'Untitled';
   return (

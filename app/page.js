@@ -1,7 +1,5 @@
 'use client';
 
-import { Toaster } from 'react-hot-toast';
-
 import NavBar from '../components/navbar';
 import Footer from '../components/footer';
 import PageTemplate from '../components/pageTemplate';
@@ -11,19 +9,6 @@ export default function Home() {
   return (
     <PageTemplate>
       <div className='w-full h-full flex justify-center align-middle font-geist_sans'>
-        <Toaster
-          position='bottom-left'
-          reverseOrder={false}
-          toastOptions={{
-            style: {
-              background: 'none',
-              boxShadow: 'none',
-              padding: '0',
-              margin: '0',
-              border: 'none',
-            },
-          }}
-        />
         <div className='w-full md:w-3/6 px-4 text-[#170202]'>
           <div className=''>
             <NavBar />

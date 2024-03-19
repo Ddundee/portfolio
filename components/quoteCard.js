@@ -1,8 +1,7 @@
 'use client';
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import Button from './button';
 import Skeleton from './skeleton';
-import {Toaster} from 'react-hot-toast';
 
 export default function QuoteCard({}) {
   const quotes = [
