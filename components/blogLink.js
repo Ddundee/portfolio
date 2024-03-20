@@ -1,18 +1,18 @@
 'use client';
 
-import {useState} from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
-import {titleCase} from 'title-case';
+import { titleCase } from 'title-case';
 import Skeleton from './skeleton';
 
-export default function BlogLink({blog}) {
+export default function BlogLink({ blog }) {
   if (!blog.title) {
     blog.title = 'Untitled';
     blog.id = '/404';
   }
 
   return (
-    <div className='hover:opacity-65 duration-500'>
+    <div className='duration-500 hover:opacity-65'>
       <Link href={'/blog/' + blog._id}>
         <h1 className='text-xl md:text-2xl font-light'>
           {titleCase(blog.name.split('-').join(' '))}

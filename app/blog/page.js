@@ -8,8 +8,8 @@ import QuoteCard from '../../components/quoteCard';
 import BlogLink from '../../components/blogLink';
 // import { MongoClient, ServerApiVersion } from "mongodb";
 import blogContent from '../../util/blogContent';
-import { useEffect, useState } from 'react';
-import { titleCase } from 'title-case';
+import {useEffect, useState} from 'react';
+import {titleCase} from 'title-case';
 
 export default function Home() {
   const [blogs, setBlogs] = useState(null);
