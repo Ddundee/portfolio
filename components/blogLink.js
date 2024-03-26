@@ -1,11 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import {useState} from 'react';
 import Link from 'next/link';
-import { titleCase } from 'title-case';
+import {titleCase} from 'title-case';
 import Skeleton from './skeleton';
 
-export default function BlogLink({ blog }) {
+export default function BlogLink({blog}) {
   if (!blog.title) {
     blog.title = 'Untitled';
     blog.id = '/404';
