@@ -7,7 +7,7 @@ export default function NotFound() {
       <div className='flex flex-col items-center gap-3'>
         <h1 className='text-xl md:text-2xl font-light'>404 - Page Not Found</h1>
         <Link href={'/'}>
-          <Button>Go Home</Button>
+          <Button action={() => {}}>Go Home</Button>
         </Link>
       </div>
     </div>
