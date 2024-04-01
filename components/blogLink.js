@@ -12,7 +12,7 @@ export default function BlogLink({blog}) {
   }
 
   return (
-    <div className='duration-500 hover:opacity-65'>
+    <div className='hover:opacity-65 duration-500'>
       <Link href={'/blog/' + blog._id}>
         <h1 className='text-xl md:text-2xl font-light'>
           {titleCase(blog.name.split('-').join(' '))}

@@ -5,8 +5,14 @@ import QuoteCard from '../../components/quoteCard';
 
 import BlogLink from '../../components/blogLink';
 // import { MongoClient, ServerApiVersion } from "mongodb";
+<<<<<<< HEAD
 import {titleCase} from 'title-case';
 import Blogs from '../../components/blogs';
+=======
+import blogContent from '../../util/blogContent';
+import { useEffect, useState } from 'react';
+import { titleCase } from 'title-case';
+>>>>>>> parent of 9bbcc3b (# Please include a useful commit message!)
 
 export default function Home() {
   return (

@@ -19,6 +19,7 @@
     ],
     "strictNullChecks": true
   },
+<<<<<<< HEAD
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
@@ -27,5 +28,8 @@
     "components/sticky.jsx",
     "components/blogs.js"
   ],
+=======
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "components/sticky.jsx"],
+>>>>>>> parent of 9bbcc3b (# Please include a useful commit message!)
   "exclude": ["node_modules"]
 }
