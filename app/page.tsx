@@ -1,5 +1,11 @@
+import AboutMe from "./_components/about";
+import Landing from "./_components/landing";
+
 export default function Home() {
     return (
-        <div>Dhanush C. Portfolio</div>
+        <>
+            <Landing />
+            <AboutMe />
+        </>
     );
 }
