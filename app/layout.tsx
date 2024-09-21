@@ -9,6 +9,7 @@ import {
     DropdownMenuItem,
 } from "@/components/ui/dropdown-menu"
 import Link from "next/link";
+import { Toaster } from "sonner";
 
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({
             <body
                 className={`${beVietnamPro.className} antialiased py-5 px-3 flex gap-2.5 flex-col selection:bg-blue-400/70 leading-normal h-[1000px]`}
             >
+                <Toaster />
                 <DropdownMenu>
                     <NavBar />
                     {children}
