@@ -1,55 +1,30 @@
+"use client";
 import React from 'react'
-import CheckableItem from './checkableItem'
+import { Card } from '@/components/ui/card';
 
 export default function AboutMe() {
-    const items: Item[] = [
-        {
-            text: 'Start making Brawl Bets',
-            checked: false
-        },
-        {
-            text: 'Finish making Brawl Bets',
-            checked: false
-        },
-        {
-            text: 'Get the AWS Cloud Practitioner Certification',
-            checked: false
-        },
-        {
-            text: 'Somehow get someone to pay for me to go to the Next.js Conf (plz sponsor me 🙏🏽)',
-            checked: false
-        },
-        {
-            text: 'Get an intership',
-            checked: false
-        },
-        {
-            text: 'Keep up with college hw 😭',
-            checked: false
-        }
-    ]
     return (
-        <div id='about' className='flex h-fu'>
+        <Card id='about' className='flex flex-wrap py-48 md:flex-row flex-col px-4 gap-8'>
             <div className='flex-1 w-full h-full flex flex-col justify-center items-center'>
                 <h2 className='text-3xl font-bold'>About Me</h2>
                 <i>*Insert a subtitle here*</i>
             </div>
-            <div className='flex gap-6 flex-col flex-1'>
+            <div className='flex gap-6 flex-col flex-1 md:mr-10 max-w-[640px]'>
                 <p>
                     Hi, I{"'"}m Dhanush Chilakala, a freshman at Virginia Tech majoring in Computer Science. I specialize in frontend development, having worked with frameworks like Next.js. For the past couple years, I have also participated in Robotics.
                 </p>
                 <div>
                     <p>Current Goals:</p>
-                    <div className=''>
-                        {items.map((item, index) => <CheckableItem key={index} item={item} />)}
-                    </div>
+                    <ul className='list-disc ml-7'>
+                        <li>Actually start creating Brawl Bets</li>
+                        <li>Finish making Brawl Bets</li>
+                        <li>Get the AWS Cloud Practitioner Certification</li>
+                        <li>Keep up with college hw 😭</li>
+
+
+                    </ul>
                 </div>
             </div>
-        </div>
+        </Card>
     )
 }
-
-export interface Item {
-    text: string;
-    checked: boolean;
-}[]

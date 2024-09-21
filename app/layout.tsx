@@ -3,7 +3,6 @@ import "./globals.css";
 import NavBar from "./_components/navbar";
 import { Be_Vietnam_Pro as BeVietnamPro } from 'next/font/google'
 import Footer from "./_components/footer";
-import { ClerkProvider } from '@clerk/nextjs'
 
 
 export const metadata: Metadata = {
@@ -24,16 +23,14 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <ClerkProvider>
-            <html lang="en" className="scroll-smooth">
-                <body
-                    className={`${beVietnamPro.className} antialiased py-5 px-3 flex gap-2.5 flex-col selection:bg-blue-400/70 leading-normal h-[1000px]`}
-                >
-                    <NavBar />
-                    {children}
-                    <Footer />
-                </body>
-            </html>
-        </ClerkProvider>
+        <html lang="en" className="scroll-smooth">
+            <body
+                className={`${beVietnamPro.className} antialiased py-5 px-3 flex gap-2.5 flex-col selection:bg-blue-400/70 leading-normal h-[1000px]`}
+            >
+                <NavBar />
+                {children}
+                <Footer />
+            </body>
+        </html>
     );
 }
