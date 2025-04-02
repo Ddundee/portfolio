@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@uidotdev/usehooks": "^2.4.1",
+    "motion": "^12.6.3",
     "next": "15.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwindcss-signals": "^0.0.25"
+    "tailwindcss-signals": "^0.0.25",
+    "use-scramble": "^2.2.15"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

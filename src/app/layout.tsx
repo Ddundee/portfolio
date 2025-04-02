@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${atkinson.className} tracking-wide antialiased bg-stone-950 selection:bg-orange-600/50`}>
+            <body className={`${atkinson.className} tracking-wide antialiased bg-stone-950 selection:bg-orange-600/30`}>
                 {children}
             </body>
         </html>
