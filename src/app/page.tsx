@@ -10,7 +10,7 @@ export default function Home() {
                     <p className="text-stone-400">based near blacksburg, tx</p>
                 </div>
 
-                <p className='text-stone-300'>i&apos;m a {ageYear} y/o student at vt. recently, i&apos;ve been reading &quot;c programming: a modern approach&quot; by k. n king. i also use arch linux btw.</p>
+                <p className='text-stone-300'>i&apos;m a {ageYear} y/o student at virginia tech. recently, i&apos;ve been reading &quot;c programming: a modern approach&quot; by k. n king. i also use arch linux btw.</p>
 
                 <div>
                     <h1 className="text-stone-100 text-xl font-bold mb-3">Projects</h1>
@@ -22,7 +22,7 @@ export default function Home() {
                                 <p className="font-bold text-stone-300 mb-1">technologies</p>
                                 <div className="gap-3 flex flex-wrap">
                                     <p className="py-1 px-2 rounded-md text-stone-400 bg-stone-900">typescript</p>
-                                    <p className="py-1 px-2 rounded-md text-stone-400 bg-stone-900">clerk</p>
+                                    <p className="py-1 px-2 rounded-md text-stone-400 bg-stone-900">clerk auth</p>
                                     <p className="py-1 px-2 rounded-md text-stone-400 bg-stone-900">tailwind css</p>
                                     <p className="py-1 px-2 rounded-md text-stone-400 bg-stone-900">drizzle</p>
                                     <p className="py-1 px-2 rounded-md text-stone-400 bg-stone-900">supabase</p>
