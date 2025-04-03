@@ -14,8 +14,5 @@ export default {
             },
         },
     },
-    plugins: [
-        // eslint-disable-next-line @typescript-eslint/no-require-imports
-        require('tailwindcss-signals'),
-    ],
+    plugins: [],
 } satisfies Config;

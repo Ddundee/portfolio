@@ -16,7 +16,7 @@ export function ScrambleText({
         tick: 1,
         step: 10,
         scramble: 8,
-        seed: 2,
+        seed: 1,
         chance: 1,
         overdrive: true,
         overflow: true,
@@ -24,5 +24,5 @@ export function ScrambleText({
 
     })
 
-    return <span ref={ref} onMouseOver={replay} className={className} />
+    return <span ref={ref} onMouseEnter={replay} className={className} />
 }
