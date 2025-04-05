@@ -10,7 +10,7 @@ export type ProjectCardProps = {
 export default function ProjectCard({ link, description, name, techologies }: ProjectCardProps) {
 
     return (
-        <a className="no-underline duration-100 group-hover:blur-sm hover:!blur-0" href={link}>
+        <a className="no-underline duration-100 group-hover:blur-sm hover:!blur-none" href={link}>
             <div className="border rounded-sm border-stone-500 py-4 px-6 group hover:bg-orange-300/5 duration-100 hover:border-orange-600 flex w-full my-2 hover:py-6 hover:my-0">
                 <div className="w-full">
                     <h2 className="font-bold text-lg text-stone-300">{name}</h2>
