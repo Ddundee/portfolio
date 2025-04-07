@@ -20,7 +20,7 @@ export default function ProjectCard({ link, description, name, techologies }: Pr
                             <p className="font-bold text-stone-300 mb-1">technologies</p>
                             <div className="gap-3 flex flex-wrap">
                                 {techologies.map((item) => (
-                                    <p className="py-1 px-2 rounded-md text-stone-400 bg-stone-900" key={item}>{item}</p>
+                                    <p className="py-1 px-2 rounded-sm text-stone-400 bg-stone-900" key={item}>{item}</p>
                                 ))}
                             </div>
                         </>

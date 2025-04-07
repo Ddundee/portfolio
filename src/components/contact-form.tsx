@@ -1,61 +1,98 @@
 "use client";
 
 import React from 'react'
-import { z } from "zod"
+import { Input } from './ui/input';
+import { Textarea } from './ui/textarea';
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-import { Button } from "@/components/ui/button"
+import { z } from "zod"
 import {
     Form,
     FormControl,
-    FormDescription,
     FormField,
     FormItem,
-    FormLabel,
     FormMessage,
 } from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-
+import { toast } from 'sonner';
 
 const contactFormSchema = z.object({
-    username: z.string().min(2).max(50),
+    firstName: z.string().min(2).max(50),
+    lastName: z.string().min(2).max(50),
+    email: z.string().email(),
+    message: z.string().max(1000)
 })
 
+
 export default function ContactForm() {
-    // 1. Define your form.
     const form = useForm<z.infer<typeof contactFormSchema>>({
         resolver: zodResolver(contactFormSchema),
         defaultValues: {
-            username: "",
+            firstName: "",
+            lastName: "",
+            email: "",
+            message: ""
+
         },
     })
 
-    // 2. Define a submit handler.
+
     function onSubmit(values: z.infer<typeof contactFormSchema>) {
-        // Do something with the form values.
-        // ✅ This will be type-safe and validated.
         console.log(values)
+        toast.loading("submitting form...", { id: "contact-form", duration: 1000 });
     }
+
+
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-                <FormField
-                    control={form.control}
-                    name="username"
-                    render={({ field }) => (
+            <form className='space-y-6' onSubmit={form.handleSubmit(onSubmit)}>
+                <div className='flex flex-wrap gap-2'>
+                    <div className='min-w-xs md:w-[calc(50%-4px)] w-full'>
+                        <FormField control={form.control} name="firstName" render={({ field }) => (
+                            <FormItem>
+                                <label className='text-stone-300 peer-active::text-stone-100 text-sm'>first name</label>
+                                <FormControl>
+                                    <Input placeholder='dan b.' {...field} />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )} />
+
+                    </div>
+                    <div className='min-w-xs md:w-[calc(50%-4px)] w-full'>
+                        <FormField control={form.control} name="lastName" render={({ field }) => (
+                            <FormItem>
+                                <label className='text-stone-300 peer-active::text-stone-100 text-sm'>last name</label>
+                                <FormControl>
+                                    <Input placeholder='cooper' {...field} />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )} />
+                    </div>
+                </div>
+                <div className='w-full'>
+                    <FormField control={form.control} name="email" render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Username</FormLabel>
+                            <label className='text-stone-300 peer-active::text-stone-100 text-sm'>email</label>
                             <FormControl>
-                                <Input placeholder="shadcn" {...field} />
+                                <Input type='email' placeholder='dbcooper1@missing.com' {...field} />
                             </FormControl>
-                            <FormDescription>
-                                This is your public display name.
-                            </FormDescription>
                             <FormMessage />
                         </FormItem>
-                    )}
-                />
-                <Button type="submit">Submit</Button>
+                    )} />
+                </div>
+                <div className='w-full'>
+                    <FormField control={form.control} name="message" render={({ field }) => (
+                        <FormItem>
+                            <label className='text-stone-300 peer-active::text-stone-100 text-sm'>message</label>
+                            <FormControl>
+                                <Textarea placeholder='d. b. cooper jumped off a plane. he is yet to be found.' {...field} />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                    )} />
+                </div>
+                <button type='submit' className='rounded-sm border px-4 py-1 border-stone-300 hover:border-orange-600 hover:bg-orange-300/5 text-stone-100 duration-100'>submit</button>
             </form>
         </Form>
     )

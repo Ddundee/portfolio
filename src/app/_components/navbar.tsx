@@ -26,13 +26,12 @@ export default function Navbar() {
             if (document.activeElement?.tagName === "INPUT" || document.activeElement?.tagName === "TEXTAREA" || e.target instanceof HTMLInputElement
             ) return;
 
-            console.log(e.key)
             for (let i = 0; i < items.length; i++) {
                 if (items[i].name[0] != '[') continue;
 
                 if (items[i].name[1] == e.key) {
                     if (e.ctrlKey) router.push(items[i].path); // TODO: replace to redirect in new tab
-                    else router.push(items[i].path);
+                    else router.push(items[i].path)
                 }
 
             }
