@@ -125,15 +125,52 @@
 
 @import 'nprogress/nprogress.css';
 
-#nprogress .bar {
-    height: 2px !important;
-    border-top: 4px solid white !important;
-    opacity: .5;
-    background: oklch(47% 0.157 37.304) !important;
+/* #nprogress .bar { */
+/*     height: 2px !important; */
+/*     border-top: 4px solid oklch(70.5% 0.213 47.604) !important; */
+/*     opacity: .9; */
+/*     background: oklch(47% 0.157 37.304) !important; */
+/*     box-shadow: 0px 5px 20px 5px rgba(255, 105, 0, 0.32); */
+/* } */
+
+/* #nprogress .bar .peg { */
+/*     box-shadow: 0 0 2px oklch(70.5% 0.213 47.604), 0 0 5px oklch(70.5% 0.213 47.604) !important; */
+/* } */
+
+/* styles/noise.css */
+@keyframes noise {
+    0% { transform: translate(-5%,  25%); }
+    10% { transform: translate(-3%,  23%); }
+    20% { transform: translate(-6%,  27%); }
+    30% { transform: translate(-4%,  24%); }
+    40% { transform: translate(-7%,  26%); }
+    50% { transform: translate(-2%,  20%); }
+    60% { transform: translate(-8%,  28%); }
+    70% { transform: translate(-1%,  22%); }
+    80% { transform: translate(-9%,  29%); }
+    90% { transform: translate(0%,   21%); }
+    100% { transform: translate(-5%,  25%); }
 }
 
-#nprogress .bar .peg {
-    
-    
-    box-shadow: 0 0 2px #fff, 0 0 5px #fff !important;
+.noise-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 5; /* Between content and background */
+  isolation: isolate; /* Creates stacking context */
 }
+
+.noise {
+  position: absolute;
+  inset: -200%;
+  width: 400%;
+  height: 400%;
+  background-image: url('/images/framernoise.png');
+  background-repeat: repeat;
+  background-size: 256px 256px;
+  opacity: 0.04;
+  animation: noise 1s steps(1) infinite;
+  mix-blend-mode: overlay; /* Optional: can create interesting effects */
+}
+

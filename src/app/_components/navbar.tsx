@@ -9,10 +9,10 @@ const items = [
         path: "/",
         name: "[h]ome"
     },
-    {
-        path: "/contact",
-        name: "[c]ontact"
-    },
+    // {
+    //     path: "/contact",
+    //     name: "[c]ontact"
+    // },
 ]
 
 export default function Navbar() {

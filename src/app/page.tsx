@@ -18,7 +18,7 @@ export default function Home() {
                 <p className="text-stone-400">based in blacksburg, va</p>
             </div>
 
-            <p className='text-stone-300'>i&apos;m a {ageYear} y/o student at virginia tech. recently, i&apos;ve been reading &quot;c programming: a modern approach&quot; by k. n king. did i mention?.. i use arch linux btw.</p>
+            <p className='text-stone-300'>i&apos;m a {ageYear} y/o student at virginia tech. recently, i&apos;ve been reading &quot;c programming: a modern approach&quot; by k. n king. <span className="blur-xs blur-3xl hover:blur-none duration-100">did i mention?.. i use arch linux btw.</span></p>
 
             <ProjectSection />
         </PageLayout>

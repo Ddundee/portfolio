@@ -24,5 +24,5 @@ export function ScrambleText({
 
     })
 
-    return <span ref={ref} onMouseEnter={replay} className={className} />
+    return <span ref={ref} className={className} />
 }
