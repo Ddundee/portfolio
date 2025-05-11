@@ -1,28 +1,36 @@
-import type { Metadata } from "next";
-import { Atkinson_Hyperlegible } from "next/font/google";
-import "./globals.css";
-import { Toaster } from "@/components/ui/sonner";
-import RouterProgressBar from "@/components/router-progress-bar";
+import type { Metadata } from 'next'
+import { Atkinson_Hyperlegible } from 'next/font/google'
+import './globals.css'
+import { Toaster } from '@/components/ui/sonner'
+import RouterProgressBar from '@/components/router-progress-bar'
 
-const atkinson = Atkinson_Hyperlegible({ weight: ['400'], subsets: ["latin", "latin-ext"] });
+const atkinson = Atkinson_Hyperlegible({
+    weight: ['400'],
+    subsets: ['latin', 'latin-ext'],
+})
 
 export const metadata: Metadata = {
-    title: "Dhanush C.",
-    description: "Made with love <3.",
-};
+    title: 'Dhanush C.',
+    description: 'Made with love <3.',
+}
 
 export default function RootLayout({
     children,
 }: Readonly<{
-    children: React.ReactNode;
+    children: React.ReactNode
 }>) {
     return (
         <html lang="en">
-            <body className={`${atkinson.className} tracking-wide antialiased bg-stone-950 selection:bg-orange-600/30`}>
+            <body
+                className={`${atkinson.className} bg-stone-950 tracking-wide antialiased selection:bg-orange-600/30`}
+            >
                 <RouterProgressBar />
-                <Toaster closeButton className="bg-orange-300/5 backdrop-blur-md boder-orange-600 text-stone-100" />
+                <Toaster
+                    closeButton
+                    className="boder-orange-600 bg-orange-300/5 text-stone-100 backdrop-blur-md"
+                />
                 {children}
             </body>
         </html>
-    );
+    )
 }

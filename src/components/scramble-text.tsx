@@ -1,18 +1,17 @@
-"use client"
-import { useScramble } from "use-scramble"
+'use client'
+import { useScramble } from 'use-scramble'
 
 export function ScrambleText({
     minors,
-    className
+    className,
 }: {
     minors: string
     className?: string
 }) {
-
     const { ref, replay } = useScramble({
         text: minors,
         range: [65, 125],
-        speed: .5,
+        speed: 0.5,
         tick: 1,
         step: 10,
         scramble: 8,
@@ -21,7 +20,6 @@ export function ScrambleText({
         overdrive: true,
         overflow: true,
         playOnMount: true,
-
     })
 
     return <span ref={ref} className={className} />
