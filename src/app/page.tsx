@@ -2,7 +2,9 @@ import { ScrambleText } from "@/components/scramble-text";
 import PageLayout from "./_components/page-layout";
 import { Caveat } from "next/font/google";
 
-const caveat = Caveat({});
+const caveat = Caveat({
+    subsets: ["cyrillic", "cyrillic-ext", "latin", "latin-ext"]
+});
 
 export default function Home() {
   const ageYear =
