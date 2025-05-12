@@ -1,20 +1,20 @@
-'use client'
+"use client";
 
-import React, { useEffect } from 'react'
-import { usePathname } from 'next/navigation'
-import nProgress from 'nprogress'
+import React, { useEffect } from "react";
+import { usePathname } from "next/navigation";
+import nProgress from "nprogress";
 
 export default function RouterProgressBar() {
-    const pathname = usePathname()
+  const pathname = usePathname();
 
-    nProgress.configure({ showSpinner: false })
+  nProgress.configure({ showSpinner: false });
 
-    useEffect(() => {
-        nProgress.done()
-        return () => {
-            nProgress.start()
-        }
-    }, [pathname])
+  useEffect(() => {
+    nProgress.done();
+    return () => {
+      nProgress.start();
+    };
+  }, [pathname]);
 
-    return <></>
+  return <></>;
 }
