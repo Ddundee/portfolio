@@ -1,11 +1,11 @@
-import { createContext } from "react";
+import { createContext } from "react"
 
 const MotionContext = createContext<{
-  motion: boolean;
-  setMotion: React.Dispatch<React.SetStateAction<boolean>>;
+    motion: boolean
+    setMotion: React.Dispatch<React.SetStateAction<boolean>>
 }>({
-  motion: true,
-  setMotion: () => {},
-});
+    motion: true,
+    setMotion: () => {},
+})
 
-export default MotionContext;
+export default MotionContext
