@@ -33,6 +33,14 @@ export default function Footer({ className }: { className: string }) {
             >
                 linkedin
             </a>
+            <a
+                className="rounded-sm px-2 py-1 text-stone-400 no-underline duration-100 hover:bg-orange-300/5 hover:text-orange-600"
+                target="_blank"
+                href="/assets/dhanush_chilakala_resume.pdf"
+                rel="noreferrer"
+            >
+                resume
+            </a>
         </footer>
     )
 }
