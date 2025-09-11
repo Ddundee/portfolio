@@ -1,11 +1,12 @@
 "use client";
-import { useRouter } from 'next/navigation'
-import React from 'react'
+import RESUME_LINK from '@/util/resumeLink';
+import React, { useEffect } from 'react'
 
 export default function Page() {
 
-    const router = useRouter();
-    router.push("/assets/dhanush_chilakala_resume.pdf")
+    useEffect(() => {
+        window.open(RESUME_LINK);
+    }, [])
 
     return (
 
@@ -24,7 +25,7 @@ export default function Page() {
                             redirecting to resume...
                         </div>
                         <div className='text-stone-400'>
-                            if you are not automatically redirected, <a className='text-stone-100 underline' href="/assets/dhanush_chilakala_resume.pdf"
+                            if you are not automatically redirected, <a className='text-stone-100 underline' href={RESUME_LINK}
                                 rel="noreferrer">click here to view my resume</a>
                         </div>
 

@@ -3,6 +3,7 @@
 // import React, { use } from "react"
 
 import { cn } from "@/lib/utils";
+import RESUME_LINK from "@/util/resumeLink";
 
 export default function Footer({ className }: { className: string }) {
     //const { setMotion } = use(MotionContext)
@@ -36,7 +37,7 @@ export default function Footer({ className }: { className: string }) {
             <a
                 className="rounded-sm px-2 py-1 text-stone-400 no-underline duration-100 hover:bg-orange-300/5 hover:text-orange-600"
                 target="_blank"
-                href="/assets/dhanush_chilakala_resume.pdf"
+                href={RESUME_LINK}
                 rel="noreferrer"
             >
                 resume

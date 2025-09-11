@@ -1,3 +1,4 @@
+'use client'
 import React from "react"
 import { ScrambleText } from "@/components/scramble-text"
 import PageLayout from "./_components/page-layout"
@@ -29,7 +30,10 @@ export default function Home() {
                 i&apos;m a {ageYear} y/o student at virginia tech. recently,
                 i&apos;ve been reading <i>c programming: a modern approach</i>{" "}
                 by k. n king.{" "}
-                <span className="blur-xs duration-100 hover:blur-none">
+                <span
+                    className="blur-xs duration-100 hover:blur-none focus:blur-none active:blur-none cursor-pointer"
+                    tabIndex={0}
+                >
                     did i mention?.. i use arch linux btw.
                 </span>
                 <span
@@ -45,7 +49,7 @@ export default function Home() {
                     <ul>
                         <li>
                             <p className="text-stone-300">
-                                <span className="select-none">[x] </span>read{" "}
+                                <span className="select-none">[<span className="">x</span>] </span>read{" "}
                                 <i>c programming: a modern approach</i> by k. n.
                                 king
                             </p>
@@ -53,9 +57,9 @@ export default function Home() {
                         <li>
                             <p className="text-stone-300">
                                 <span className="select-none">
-                                    [<span className="invisible">x</span>]{" "}
+                                    [x]{" "}
                                 </span>
-                                config nvim ;(
+                                read <i>c++ primer</i> by stanley b. lippman
                             </p>
                         </li>
                         <li>
@@ -63,9 +67,11 @@ export default function Home() {
                                 <span className="select-none">
                                     [<span className="invisible">x</span>]{" "}
                                 </span>
-                                read <i>algorithms in c</i> by robert sedgewick
+                                read <i>algorithms in c++</i> by robert sedgewick
                             </p>
                         </li>
+
+
                     </ul>
                 </div>
             </div>
