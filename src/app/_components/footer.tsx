@@ -11,7 +11,7 @@ export default function Footer({ className }: { className: string }) {
     return (
         <footer className={cn("mt-9 flex w-full max-w-screen-md flex-row gap-4", className)}>
             <a
-                className="rounded-sm px-2 py-1 text-stone-400 no-underline duration-100 hover:bg-orange-300/5 hover:text-orange-600"
+                className="select-none rounded-sm px-2 py-1 text-neutral-400 no-underline duration-100 hover:bg-orange-300/5 hover:text-orange-600"
                 target="_blank"
                 href="mailto:dhanushc@vt.edu"
                 rel="noreferrer"
@@ -19,7 +19,7 @@ export default function Footer({ className }: { className: string }) {
                 email
             </a>
             <a
-                className="rounded-sm px-2 py-1 text-stone-400 no-underline duration-100 hover:bg-orange-300/5 hover:text-orange-600"
+                className="select-none rounded-sm px-2 py-1 text-neutral-400 no-underline duration-100 hover:bg-orange-300/5 hover:text-orange-600"
                 target="_blank"
                 href="https://www.github.com/ddundee"
                 rel="noreferrer"
@@ -27,7 +27,7 @@ export default function Footer({ className }: { className: string }) {
                 github
             </a>
             <a
-                className="rounded-sm px-2 py-1 text-stone-400 no-underline duration-100 hover:bg-orange-300/5 hover:text-orange-600"
+                className="select-none rounded-sm px-2 py-1 text-neutral-400 no-underline duration-100 hover:bg-orange-300/5 hover:text-orange-600"
                 target="_blank"
                 href="https://www.linkedin.com/in/dhanush-chilakala/"
                 rel="noreferrer"
@@ -35,7 +35,7 @@ export default function Footer({ className }: { className: string }) {
                 linkedin
             </a>
             <a
-                className="rounded-sm px-2 py-1 text-stone-400 no-underline duration-100 hover:bg-orange-300/5 hover:text-orange-600"
+                className="select-none rounded-sm px-2 py-1 text-neutral-400 no-underline duration-100 hover:bg-orange-300/5 hover:text-orange-600"
                 target="_blank"
                 href={RESUME_LINK}
                 rel="noreferrer"

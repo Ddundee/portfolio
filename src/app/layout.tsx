@@ -3,6 +3,7 @@ import { Atkinson_Hyperlegible } from "next/font/google"
 import "./globals.css"
 import { Toaster } from "@/components/ui/sonner"
 import RouterProgressBar from "@/components/router-progress-bar"
+import { TooltipProvider } from "@/components/ui/tooltip"
 
 const atkinson = Atkinson_Hyperlegible({
     weight: ["400"],
@@ -22,14 +23,15 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${atkinson.className} bg-stone-950 tracking-wide antialiased selection:bg-orange-600/30`}
+                className={`${atkinson.className} bg-neutral-950 tracking-wide antialiased selection:bg-orange-600/30`}
             >
-                <RouterProgressBar />
-                <Toaster
-                    closeButton
-                    className="boder-orange-600 bg-orange-300/5 text-stone-100 backdrop-blur-md"
-                />
-                {children}
+                <TooltipProvider>
+                    <Toaster
+                        closeButton
+                        className="boder-orange-600 bg-orange-300/5 text-neutral-100 backdrop-blur-md"
+                    />
+                    {children}
+                </TooltipProvider>
             </body>
         </html>
     )

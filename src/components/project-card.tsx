@@ -18,17 +18,17 @@
 //       className="no-underline duration-100 group-hover:blur-sm hover:!blur-none"
 //       href={link}
 //     >
-//       <div className="group my-2 flex w-full rounded-sm border border-stone-500 px-6 py-4 duration-100 hover:my-0 hover:border-orange-600 hover:bg-orange-300/5 hover:py-6">
+//       <div className="group my-2 flex w-full rounded-sm border border-neutral-500 px-6 py-4 duration-100 hover:my-0 hover:border-orange-600 hover:bg-orange-300/5 hover:py-6">
 //         <div className="w-full">
-//           <h2 className="text-lg font-bold text-stone-300">{name}</h2>
-//           <p className="mb-4 text-stone-400">{description}</p>
+//           <h2 className="text-lg font-bold text-neutral-300">{name}</h2>
+//           <p className="mb-4 text-neutral-400">{description}</p>
 //           {techologies && (
 //             <>
-//               <p className="mb-1 font-bold text-stone-300">technologies</p>
+//               <p className="mb-1 font-bold text-neutral-300">technologies</p>
 //               <div className="flex flex-wrap gap-3">
 //                 {techologies.map((item) => (
 //                   <p
-//                     className="rounded-sm bg-stone-900 px-2 py-1 text-stone-400"
+//                     className="rounded-sm bg-neutral-900 px-2 py-1 text-neutral-400"
 //                     key={item}
 //                   >
 //                     {item}
@@ -39,7 +39,7 @@
 //           )}
 //         </div>
 //         <svg
-//           className="text-stone-500 group-hover:text-orange-600"
+//           className="text-neutral-500 group-hover:text-orange-600"
 //           stroke="0.5"
 //           width="20"
 //           height="20"

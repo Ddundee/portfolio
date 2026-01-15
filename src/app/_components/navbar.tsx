@@ -48,7 +48,7 @@ export default function Navbar() {
                 if (pathname === path)
                     return (
                         <div
-                            className="rounded-sm px-2 py-1 text-stone-200"
+                            className="rounded-sm px-2 py-1 text-neutral-200"
                             key={path}
                         >
                             {name}
@@ -57,7 +57,7 @@ export default function Navbar() {
                 return (
                     <Link
                         href={path}
-                        className="rounded-sm px-2 py-1 text-stone-400 hover:bg-orange-300/5 hover:text-orange-600"
+                        className="rounded-sm px-2 py-1 text-neutral-400 hover:bg-orange-300/5 hover:text-orange-600"
                         key={path}
                     >
                         {name}

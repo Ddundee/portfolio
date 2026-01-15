@@ -51,7 +51,7 @@
 //               name="firstName"
 //               render={({ field }) => (
 //                 <FormItem>
-//                   <label className="peer-active::text-stone-100 text-sm text-stone-300">
+//                   <label className="peer-active::text-neutral-100 text-sm text-neutral-300">
 //                     first name
 //                   </label>
 //                   <FormControl>
@@ -68,7 +68,7 @@
 //               name="lastName"
 //               render={({ field }) => (
 //                 <FormItem>
-//                   <label className="peer-active::text-stone-100 text-sm text-stone-300">
+//                   <label className="peer-active::text-neutral-100 text-sm text-neutral-300">
 //                     last name
 //                   </label>
 //                   <FormControl>
@@ -86,7 +86,7 @@
 //             name="email"
 //             render={({ field }) => (
 //               <FormItem>
-//                 <label className="peer-active::text-stone-100 text-sm text-stone-300">
+//                 <label className="peer-active::text-neutral-100 text-sm text-neutral-300">
 //                   email
 //                 </label>
 //                 <FormControl>
@@ -107,7 +107,7 @@
 //             name="message"
 //             render={({ field }) => (
 //               <FormItem>
-//                 <label className="peer-active::text-stone-100 text-sm text-stone-300">
+//                 <label className="peer-active::text-neutral-100 text-sm text-neutral-300">
 //                   message
 //                 </label>
 //                 <FormControl>
@@ -123,7 +123,7 @@
 //         </div>
 //         <button
 //           type="submit"
-//           className="rounded-sm border border-stone-300 px-4 py-1 text-stone-100 duration-100 hover:border-orange-600 hover:bg-orange-300/5"
+//           className="rounded-sm border border-neutral-300 px-4 py-1 text-neutral-100 duration-100 hover:border-orange-600 hover:bg-orange-300/5"
 //         >
 //           submit
 //         </button>

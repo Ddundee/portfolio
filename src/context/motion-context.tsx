@@ -5,7 +5,7 @@ const MotionContext = createContext<{
     setMotion: React.Dispatch<React.SetStateAction<boolean>>
 }>({
     motion: true,
-    setMotion: () => {},
+    setMotion: () => { },
 })
 
 export default MotionContext
