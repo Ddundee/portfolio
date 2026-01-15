@@ -4,65 +4,49 @@ import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import React, { useEffect } from "react"
 
-const items = [
+const pages = [
     {
-        path: "/",
-        name: "[h]ome",
+        title: "[h]ome",
+        url: "/"
     },
-    // {
-    //     path: "/contact",
-    //     name: "[c]ontact"
-    // },
+    {
+        title: "[b]log",
+        url: "/blog"
+    }
 ]
 
 export default function Navbar() {
     const pathname = usePathname() || "/"
     const router = useRouter()
 
+
     useEffect(() => {
-        const handleKeydown = (e: KeyboardEvent) => {
+        const handleKeyPress = (event: KeyboardEvent) => {
+            // Don't trigger if any input elements are focused or if event target is an input
             if (
                 document.activeElement?.tagName === "INPUT" ||
                 document.activeElement?.tagName === "TEXTAREA" ||
-                e.target instanceof HTMLInputElement
-            )
+                event.target instanceof HTMLInputElement
+            ) {
                 return
+            }
 
-            for (let i = 0; i < items.length; i++) {
-                if (items[i].name[0] !== "[") continue
-
-                if (items[i].name[1] === e.key) {
-                    if (e.ctrlKey)
-                        router.push(items[i].path) // TODO: replace to redirect in new tab
-                    else router.push(items[i].path)
+            for (const page of pages) {
+                if (event.key.toLowerCase() === page.title.charAt(1)) {
+                    router.push(page.url)
                 }
             }
         }
-        window.addEventListener("keydown", handleKeydown)
-        return () => window.removeEventListener("keydown", handleKeydown)
+
+        window.addEventListener("keydown", handleKeyPress)
+        return () => window.removeEventListener("keydown", handleKeyPress)
     }, [router])
 
     return (
-        <nav className="flex w-full max-w-screen-md gap-2 first:-ml-2">
-            {items.map(({ name, path }) => {
-                if (pathname === path)
-                    return (
-                        <div
-                            className="rounded-sm px-2 py-1 text-neutral-200"
-                            key={path}
-                        >
-                            {name}
-                        </div>
-                    )
-                return (
-                    <Link
-                        href={path}
-                        className="rounded-sm px-2 py-1 text-neutral-400 hover:bg-orange-300/5 hover:text-orange-600"
-                        key={path}
-                    >
-                        {name}
-                    </Link>
-                )
+        <nav className="w-full max-w-screen-md gap-3 flex">
+            {pages.map(page => {
+                if (pathname == page.url) return <p key={page.url} className="text-neutral-200">{page.title}</p>
+                else return <Link key={page.url} href={page.url} className="text-neutral-400 hover:text-neutral-200 duration-200">{page.title}</Link>
             })}
         </nav>
     )

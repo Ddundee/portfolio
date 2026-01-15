@@ -1,25 +1,20 @@
-"use client"
-
-import React, { useState, type ReactNode } from "react"
 import Footer from "./footer"
-import MotionContext from "@/context/motion-context"
+import Link from "next/link"
+import { ReactNode } from "react"
+import Navbar from "./navbar"
 
 type Props = {
     children: ReactNode[] | ReactNode
 }
 
 export default function PageLayout({ children }: Props) {
-    const [motion, setMotion] = useState<boolean>(true)
 
     return (
         <div className="relative flex min-h-screen flex-col items-center justify-between pb-14">
-            <div className="noise-overlay" aria-hidden="true">
-                <div className="" />
-            </div>
-
-            <div className="relative z-10 flex w-screen flex-col items-center gap-9 px-4 py-14">
+            <div className="relative z-10 flex w-screen flex-col items-center gap-1 px-4 py-14">
+                <Navbar />
                 <div className="h-12 w-full" />
-                <main className="w-full max-w-screen-md space-y-9">
+                <main className="w-full max-w-screen-md">
                     {children}
                 </main>
             </div>
