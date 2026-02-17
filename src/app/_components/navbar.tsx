@@ -10,6 +10,10 @@ const pages = [
         url: "/"
     },
     {
+        title: "h[a]ckathons",
+        url: "/hackathons"
+    },
+    {
         title: "[b]log",
         url: "/blog"
     }
@@ -22,17 +26,21 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleKeyPress = (event: KeyboardEvent) => {
-            // Don't trigger if any input elements are focused or if event target is an input
             if (
                 document.activeElement?.tagName === "INPUT" ||
                 document.activeElement?.tagName === "TEXTAREA" ||
-                event.target instanceof HTMLInputElement
+                event.target instanceof HTMLInputElement ||
+                event.metaKey ||
+                event.ctrlKey ||
+                event.altKey ||
+                event.shiftKey
             ) {
                 return
             }
 
             for (const page of pages) {
-                if (event.key.toLowerCase() === page.title.charAt(1)) {
+                const index = page.title.indexOf("[")
+                if (event.key.toLowerCase() === page.title.charAt(index + 1)) {
                     router.push(page.url)
                 }
             }

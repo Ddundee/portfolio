@@ -5,11 +5,15 @@
 import { cn } from "@/lib/utils";
 import RESUME_LINK from "@/util/resumeLink";
 
-export default function Footer({ className }: { className: string }) {
-    //const { setMotion } = use(MotionContext)
+export default async function Footer({ className }: { className: string }) {
+
+    const response = await fetch(process.env.VIEW_URL || "");
+    const data = await response.json();
+    const views = data.value;
 
     return (
-        <footer className={cn("mt-9 flex w-full max-w-screen-md flex-row gap-4", className)}>
+        <footer className={cn("mt-9 flex w-full max-w-screen-md flex-row gap-4 justify-between", className)}>
+            <div>
             <a
                 className="select-none rounded-sm px-2 py-1 text-neutral-400 no-underline duration-100 hover:bg-orange-300/5 hover:text-orange-600"
                 target="_blank"
@@ -42,6 +46,10 @@ export default function Footer({ className }: { className: string }) {
             >
                 resume
             </a>
+            </div>
+            <div>
+                <p className="text-neutral-400 text-sm">{views} views</p>
+            </div>
         </footer>
     )
 }

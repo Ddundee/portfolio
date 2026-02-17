@@ -6,6 +6,7 @@ import CMDAToolTip from "@/components/cmda-tooltip"
 import Link from "next/link"
 import BLOGS from "./blog/blogs"
 import BlogList from "./_components/blog-list"
+import HackathonList from "./_components/hackathon-list"
 
 export default function Home() {
     const ageYear =
@@ -27,6 +28,18 @@ export default function Home() {
                     i&apos;m a {ageYear} y/o undergrad student at virginia tech majoring in cs + cmda (just a complicated name for data analytics). i love building things and solving problems. if i'm not coding, i'm probably watching movies.
                 </p>
             </div>
+            <div className="space-y-3">
+                <h2 className="min-h-7 w-full text-2xl font-semibold text-neutral-100">
+                    hackathons
+                </h2>
+                <HackathonList />
+            </div>
+            {/* <div className="space-y-3">
+                <h2 className="min-h-7 w-full text-2xl font-semibold text-neutral-100">
+                    projects
+                </h2>
+                <ProjectList />
+            </div> */}
             <div className="space-y-3">
                 <h2 className="min-h-7 w-full text-2xl font-semibold text-neutral-100">
                     blog

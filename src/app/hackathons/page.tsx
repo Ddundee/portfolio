@@ -4,20 +4,20 @@ import PageLayout from "@/app/_components/page-layout"
 import { Caveat } from "next/font/google"
 import CMDAToolTip from "@/components/cmda-tooltip"
 import Link from "next/link"
-import BLOGS from "./blogs"
-import BlogList from "../_components/blog-list"
+import HackathonList from "../_components/hackathon-list"
 
 export default function Home() {
+
     return (
         <div className="space-y-12">
             <div className="space-y-9">
                 <div className="space-y-2">
                     <h1 className="min-h-7 w-full text-5xl font-bold text-neutral-100">
-                        blog
+                        hackathons
                     </h1>
-                    <p className="text-neutral-400 text-lg">writing my thoughts and maybe useful tidbits</p>
+                    <p className="text-neutral-400 text-lg">competitions i've participated in</p>
                 </div>
-                <BlogList />
+                <HackathonList />
             </div>
         </div>
     )
