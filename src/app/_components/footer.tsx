@@ -4,7 +4,7 @@ import RESUME_LINK from "@/util/resumeLink";
 import { useEffect, useState } from "react";
 
 export default function Footer({ className }: { className: string }) {
-const [views, setViews] = useState<number>(0);
+const [views, setViews] = useState<number>(-1);
     useEffect(() => {
         const fetchViews = async () => {
             const response = await fetch(process.env.VIEW_URL || "");
