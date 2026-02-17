@@ -1,9 +1,8 @@
-// import MotionContext from "@/context/motion-context"
-// import { cn } from "@/lib/utils"
-// import React, { use } from "react"
-
+"use dynamic"
 import { cn } from "@/lib/utils";
 import RESUME_LINK from "@/util/resumeLink";
+
+export const dynamic = "force-dynamic";
 
 export default async function Footer({ className }: { className: string }) {
 
