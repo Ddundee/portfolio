@@ -1,14 +1,18 @@
-"use dynamic"
+"use client"
 import { cn } from "@/lib/utils";
 import RESUME_LINK from "@/util/resumeLink";
+import { useEffect, useState } from "react";
 
-export const dynamic = "force-dynamic";
-
-export default async function Footer({ className }: { className: string }) {
-
-    const response = await fetch(process.env.VIEW_URL || "");
-    const data = await response.json();
-    const views = data.value;
+export default function Footer({ className }: { className: string }) {
+const [views, setViews] = useState<number>(0);
+    useEffect(() => {
+        const fetchViews = async () => {
+            const response = await fetch(process.env.VIEW_URL || "");
+            const data = await response.json();
+            setViews(data.value);
+        }
+        fetchViews();
+    }, []);
 
     return (
         <footer className={cn("mt-9 flex w-full max-w-screen-md flex-row gap-4 justify-between", className)}>
