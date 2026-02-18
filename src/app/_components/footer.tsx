@@ -3,11 +3,13 @@ import { cn } from "@/lib/utils";
 import RESUME_LINK from "@/util/resumeLink";
 import { useEffect, useState } from "react";
 
+const VIEW_URL="https://abacus.jasoncameron.dev/hit/dhanushc_prod/key"
+
 export default function Footer({ className }: { className: string }) {
 const [views, setViews] = useState<number>(-1);
     useEffect(() => {
         const fetchViews = async () => {
-            const response = await fetch(process.env.VIEW_URL || "");
+            const response = await fetch(process.env.NEXT_PUBLIC_VIEW_URL || VIEW_URL);
             const data = await response.json();
             setViews(data.value);
         }
@@ -51,7 +53,10 @@ const [views, setViews] = useState<number>(-1);
             </a>
             </div>
             <div>
-                <p className="text-neutral-400 text-sm">{views} views</p>
+                {views !== -1 && (
+                    <p className="text-neutral-400 text-sm">{views} views</p>
+                )}
+                
             </div>
         </footer>
     )
