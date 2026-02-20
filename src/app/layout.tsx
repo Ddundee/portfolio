@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/sonner"
 import RouterProgressBar from "@/components/router-progress-bar"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import PageLayout from "./_components/page-layout"
+import { Analytics } from "@vercel/analytics/next"
 
 const atkinson = Atkinson_Hyperlegible({
     weight: ["400"],
@@ -35,6 +36,7 @@ export default function RootLayout({
                         {children}
                     </PageLayout>
                 </TooltipProvider>
+                <Analytics />
             </body>
         </html>
     )
