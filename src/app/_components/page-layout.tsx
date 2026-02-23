@@ -1,5 +1,4 @@
 import Footer from "./footer"
-import Link from "next/link"
 import { ReactNode } from "react"
 import Navbar from "./navbar"
 

@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import React, { useEffect } from "react"
+import { motion } from 'motion/react'
 
 const pages = [
     {
@@ -51,11 +52,16 @@ export default function Navbar() {
     }, [router])
 
     return (
-        <nav className="w-full max-w-screen-md gap-3 flex">
+        <motion.nav
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-10% 0px" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="w-full max-w-screen-md gap-3 flex">
             {pages.map(page => {
                 if (pathname == page.url) return <p key={page.url} className="text-neutral-200">{page.title}</p>
                 else return <Link key={page.url} href={page.url} className="text-neutral-400 hover:text-neutral-200 duration-200">{page.title}</Link>
             })}
-        </nav>
+        </motion.nav>
     )
 }
