@@ -1,9 +1,10 @@
 "use client"
 
+import NumberFlow from '@number-flow/react'
 import { useEffect, useState } from "react";
 
-const HIT_URL = "https://abacus.jasoncameron.dev/hit/dhanushc_prod/key"
-const STREAM_URL = "https://abacus.jasoncameron.dev/stream/dhanushc_prod/key"
+const HIT_URL = "https://abacus.jasoncameron.dev/hit/dhanushc_dev/key"
+const STREAM_URL = "https://abacus.jasoncameron.dev/stream/dhanushc_dev/key"
 
 export default function Views() {
     const [streams, setStreams] = useState<number>(-1);
@@ -32,7 +33,7 @@ export default function Views() {
     return (
         <div>
             {streams !== -1 && (
-                <p className="text-neutral-400 text-sm">{streams} views</p>
+                <p className="text-neutral-400 text-sm"><NumberFlow value={streams} /> views</p>
             )}
         </div>
     )
