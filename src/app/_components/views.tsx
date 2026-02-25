@@ -3,17 +3,16 @@
 import NumberFlow from '@number-flow/react'
 import { useEffect, useState } from "react";
 
-const HIT_URL = "https://abacus.jasoncameron.dev/hit/dhanushc_dev/key"
-const STREAM_URL = "https://abacus.jasoncameron.dev/stream/dhanushc_dev/key"
+const HIT_URL = "https://abacus.jasoncameron.dev/hit/dhanushc.com/portfolio"
+const STREAM_URL = "https://abacus.jasoncameron.dev/stream/dhanushc.com/portfolio"
 
 export default function Views() {
     const [streams, setStreams] = useState<number>(-1);
-    const [hits, setHits] = useState<number>(-1);
 
     useEffect(() => {
         const fetchViews = async () => {
             const res = await fetch(HIT_URL)
-            console.log(hits)
+            console.log(res.json())
         }
         fetchViews();
     }, []);
