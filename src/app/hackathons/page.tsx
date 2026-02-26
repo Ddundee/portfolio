@@ -1,24 +1,53 @@
-import React from "react"
+'use client'
+import React, { useContext, useEffect } from "react"
 import { ScrambleText } from "@/components/scramble-text"
 import PageLayout from "@/app/_components/page-layout"
 import { Caveat } from "next/font/google"
 import CMDAToolTip from "@/components/cmda-tooltip"
 import Link from "next/link"
 import HackathonList from "../_components/hackathon-list"
+import { motion } from "motion/react"
+import MotionContext from "@/context/motion-context"
 
 export default function Home() {
+    const { motion: shouldAnimate, setMotion } = useContext(MotionContext)
+
+    useEffect(() => {
+        return () => {
+            if (shouldAnimate) {
+                setMotion(false)
+            }
+        }
+    }, [shouldAnimate, setMotion])
 
     return (
         <div className="space-y-12">
-            <div className="space-y-9">
-                <div className="space-y-2">
-                    <h1 className="min-h-7 w-full text-5xl font-bold text-neutral-100">
-                        hackathons
-                    </h1>
-                    <p className="text-neutral-400 text-lg">competitions i've participated in</p>
-                </div>
-                <HackathonList />
-            </div>
+            {shouldAnimate ? (
+                <motion.section
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-10% 0px" }}
+                    transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+                    className="space-y-9">
+                    <div className="space-y-2">
+                        <h1 className="min-h-7 w-full text-5xl font-bold text-neutral-100">
+                            hackathons
+                        </h1>
+                        <p className="text-neutral-400 text-lg">competitions i've participated in</p>
+                    </div>
+                    <HackathonList />
+                </motion.section>
+            ) : (
+                <section className="space-y-9">
+                    <div className="space-y-2">
+                        <h1 className="min-h-7 w-full text-5xl font-bold text-neutral-100">
+                            hackathons
+                        </h1>
+                        <p className="text-neutral-400 text-lg">competitions i've participated in</p>
+                    </div>
+                    <HackathonList />
+                </section>
+            )}
         </div>
     )
 }
