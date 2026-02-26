@@ -1,10 +1,12 @@
 import React from "react"
 import HACKATHONS from "../../data/hackathons"
 
-export default function HackathonList() {
+export default function HackathonList({condensed}: {condensed?: boolean}) {
+
+    const hackathonList = condensed ? HACKATHONS.filter((hackathon) => hackathon.award).slice(0, 3) : HACKATHONS;
     return (
         <div className="space-y-4">
-            {HACKATHONS.map((hackathon) => (
+            {hackathonList.map((hackathon) => (
                 <div key={hackathon.name} className="space-y-1">
                     <div className="flex items-baseline justify-between gap-2">
                         <div className="flex items-baseline gap-2 min-w-0">

@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 import PageLayout from "./_components/page-layout"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import MotionProvider from "@/context/motion-provider"
 
 const atkinson = Atkinson_Hyperlegible({
     weight: ["400"],
@@ -76,9 +77,11 @@ export default function RootLayout({
                         closeButton
                         className="boder-orange-600 bg-orange-300/5 text-neutral-100 backdrop-blur-md"
                     />
-                    <PageLayout>
-                        {children}
-                    </PageLayout>
+                    <MotionProvider>
+                        <PageLayout>
+                            {children}
+                        </PageLayout>
+                    </MotionProvider>
                 </TooltipProvider>
                 <Analytics />
                 <SpeedInsights />

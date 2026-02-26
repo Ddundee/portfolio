@@ -3,8 +3,8 @@
 import NumberFlow from '@number-flow/react'
 import { useEffect, useState } from "react";
 
-const HIT_URL = "https://abacus.jasoncameron.dev/hit/dhanushc.com/portfolio"
-const STREAM_URL = "https://abacus.jasoncameron.dev/stream/dhanushc.com/portfolio"
+const HIT_URL = "https://abacus.jasoncameron.dev/hit/dhanushc.com/portfolio_dev"
+const STREAM_URL = "https://abacus.jasoncameron.dev/stream/dhanushc.com/portfolio_dev"
 
 export default function Views() {
     const [streams, setStreams] = useState<number>(-1);
